@@ -17,7 +17,7 @@ def write(txt, x, y, font="arial", color=(0, 0, 0), size=30, aa=True, angle=0):
     temp = pygame.transform.rotate(temp, angle)
     win.blit(temp, (x, y))
 
-
+	
 def button(msg, x, y, w, h, ic, ac, font="arial", fontSize=30, tcolor=(0, 0, 0), action=None, args=None):
     mouse = pygame.mouse.get_pos()
     click = pygame.mouse.get_pressed()
@@ -39,8 +39,8 @@ def button(msg, x, y, w, h, ic, ac, font="arial", fontSize=30, tcolor=(0, 0, 0),
 def load_pangrams(types, loop=250):
 	if types == "other":
 		special_char = list("!@#$%^&*()_-+=/?<>\"',.;:1234567890[]{}`~")
-		for i in range(250):
-			shuffle(special_char)
+		for i in range(loop):
+			random.shuffle(special_char)
 			yield ''.join(special_char)
 	else:
 		for i in open("pangrams.txt", 'r'):
@@ -48,14 +48,9 @@ def load_pangrams(types, loop=250):
 
 
 def train(train_type):
-	if train_type != "other":
-		data = load_pangrams(train_type)
-		if train_type == "upper":
-			data = data.upper()
-		data = data[:-1].split('\n')
-	#else:
-		#TODO add randomized data
-
+	data = load_pangrams(train_type)
+	ch = 0
+	sentence = "start!"
 	while True:
 		win.fill((255, 255, 255))
 		for event in pygame.event.get():
@@ -65,13 +60,25 @@ def train(train_type):
 			if event.type == pygame.KEYDOWN:
 				if event.key == pygame.K_ESCAPE:
 					return
+				if event.key == pygame.K_SPACE:
+					ch += 1
+					if ch > len(sentence):
+						ch = 0
+						sentence = next(data, None)[:-1]
+						if train_type == "upper":
+							sentence = sentence.upper()
+						elif train_type == "lower":
+							sentence = sentence.lower()
+						if sentence is None:
+							print("Done")
+							break
 		
-		if (len(data) > 0):
-			sentence = random.choice(data)
-			data.remove(sentence)
+		write(train_type, 10, 10, size=50)
+		write(sentence[ch:], 10, 100, color=(100, 100, 100))
 		
 		clock.tick(25)
 		pygame.display.update()
+
 
 def menu():
 	while True:

@@ -1,5 +1,7 @@
 import pygame
 import random
+import json
+from string import ascii_lowercase, ascii_uppercase
 
 pygame.init()
 WIDTH = 1200
@@ -17,7 +19,7 @@ def write(txt, x, y, font="arial", color=(0, 0, 0), size=30, aa=True, angle=0):
     win.blit(temp, (x, y))
 
 
-def button(msg, x, y, w, h, ic, ac, font="arial", fontSize=30, tcolor=(0, 0, 0), action=None, args=None):
+def button(msg, x, y, w, h, ic, ac, font="arial", font_size=30, tcolor=(0, 0, 0), action=None, args=None):
     mouse = pygame.mouse.get_pos()
     click = pygame.mouse.get_pressed()
     if x + w > mouse[0] > x and y + h > mouse[1] > y:
@@ -30,9 +32,23 @@ def button(msg, x, y, w, h, ic, ac, font="arial", fontSize=30, tcolor=(0, 0, 0),
     else:
         pygame.draw.rect(win, ic, (x, y, w, h))
 
-    font = pygame.font.SysFont(font, fontSize, True)
+    font = pygame.font.SysFont(font, font_size, True)
     screen_text = font.render(msg, True, tcolor)
     win.blit(screen_text, (x - screen_text.get_rect().width / 2 + w / 2, y - screen_text.get_rect().height / 2 + h / 2))
+
+
+def load_char_info():
+    json_data = {"lower": dict.fromkeys(ascii_lowercase, 0), "upper": dict.fromkeys(ascii_uppercase, 0),
+                 "other": dict.fromkeys("!@#$%^&*()_-+=/?<>\"',.;:1234567890[]{}`~", 0)}
+    char_sum = [0, 0]
+    try:
+        json_data = json.load(open("count.json", 'r'))
+        char_sum = [json_data["lower"].values(), json_data["upper"].values()]
+    except FileNotFoundError:
+        outfile = open("count.json", 'x')
+        json.dump(json_data, outfile)
+    finally:
+        return json_data, char_sum
 
 
 def load_pangrams(types, loop=250):
@@ -47,6 +63,7 @@ def load_pangrams(types, loop=250):
 
 
 def train(train_type):
+    char_count, char_sum = load_char_info()
     data = load_pangrams(train_type)
     ch = 0
     sentence = "start!"

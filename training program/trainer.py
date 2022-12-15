@@ -40,10 +40,11 @@ def button(msg, x, y, w, h, ic, ac, font="arial", font_size=30, tcolor=(0, 0, 0)
 def load_char_info():
     json_data = {"lower": dict.fromkeys(ascii_lowercase, 0), "upper": dict.fromkeys(ascii_uppercase, 0),
                  "other": dict.fromkeys("!@#$%^&*()_-+=/?<>\"',.;:1234567890[]{}`~", 0)}
-    char_sum = [0, 0]
+    char_sum = {"lower": 0, "upper": 0, "other": 0}
     try:
         json_data = json.load(open("count.json", 'r'))
-        char_sum = [json_data["lower"].values(), json_data["upper"].values()]
+        char_sum = {"lower": json_data["lower"].values(), "upper": json_data["upper"].values(),
+                    "other": json_data["other"].values()}
     except FileNotFoundError:
         outfile = open("count.json", 'x')
         json.dump(json_data, outfile)
@@ -51,20 +52,28 @@ def load_char_info():
         return json_data, char_sum
 
 
-def load_pangrams(types, loop=250):
+def load_pangrams(types, skip, loop=250):
     if types == "other":
         special_char = list("!@#$%^&*()_-+=/?<>\"',.;:1234567890[]{}`~")
-        for i in range(loop):
+        for i in range(loop-skip):
             random.shuffle(special_char)
             yield ''.join(special_char)
     else:
+        j = skip
         for i in open("pangrams.txt", 'r'):
+            if j >= len(i):
+                j -= len(i)
+                continue
+            elif j > 0:
+                yield i[j:]
+                j = 0
+                continue
             yield i
 
 
 def train(train_type):
     char_count, char_sum = load_char_info()
-    data = load_pangrams(train_type)
+    data = load_pangrams(train_type, char_sum[train_type])
     ch = 0
     sentence = "start!"
     while True:
@@ -77,6 +86,7 @@ def train(train_type):
                 if event.key == pygame.K_ESCAPE:
                     return
                 if event.key == pygame.K_SPACE:
+                    char_count[train_type][sentence[ch]] += 1 #TODO fix this
                     ch += 1
                     if ch > len(sentence):
                         ch = 0

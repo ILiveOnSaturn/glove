@@ -1,5 +1,7 @@
 import pygame
 import random
+import json
+from string import ascii_lowercase, ascii_uppercase
 
 pygame.init()
 WIDTH = 1200
@@ -8,6 +10,7 @@ win = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Glove Trainer")
 
 clock = pygame.time.Clock()
+SPECIAL_CHARS = "!@#$%^&*()_-+=/?<>\"', .;:1234567890[]{}`~↑↓→←↩"
 
 
 def write(txt, x, y, font="arial", color=(0, 0, 0), size=30, aa=True, angle=0):
@@ -17,7 +20,7 @@ def write(txt, x, y, font="arial", color=(0, 0, 0), size=30, aa=True, angle=0):
     win.blit(temp, (x, y))
 
 
-def button(msg, x, y, w, h, ic, ac, font="arial", fontSize=30, tcolor=(0, 0, 0), action=None, args=None):
+def button(msg, x, y, w, h, ic, ac, font="arial", font_size=30, tcolor=(0, 0, 0), action=None, args=None):
     mouse = pygame.mouse.get_pos()
     click = pygame.mouse.get_pressed()
     if x + w > mouse[0] > x and y + h > mouse[1] > y:
@@ -30,26 +33,54 @@ def button(msg, x, y, w, h, ic, ac, font="arial", fontSize=30, tcolor=(0, 0, 0),
     else:
         pygame.draw.rect(win, ic, (x, y, w, h))
 
-    font = pygame.font.SysFont(font, fontSize, True)
+    font = pygame.font.SysFont(font, font_size, True)
     screen_text = font.render(msg, True, tcolor)
     win.blit(screen_text, (x - screen_text.get_rect().width / 2 + w / 2, y - screen_text.get_rect().height / 2 + h / 2))
 
 
-def load_pangrams(types, loop=250):
+def load_char_info():
+    json_data = {"lower": dict.fromkeys(ascii_lowercase, 0), "upper": dict.fromkeys(ascii_uppercase, 0),
+                 "other": dict.fromkeys(SPECIAL_CHARS, 0)}
+    try:
+        json_data = json.load(open("count.json", 'r'))
+    except FileNotFoundError:
+        outfile = open("count.json", 'x')
+        json.dump(json_data, outfile)
+    finally:
+        return json_data
+
+
+def load_pangrams(types, skip, loop=250):
     if types == "other":
-        special_char = list("!@#$%^&*()_-+=/?<>\"',.;:1234567890[]{}`~")
-        for i in range(loop):
+        special_char = list(SPECIAL_CHARS)
+        for i in range(loop-(skip//len(special_char))):
             random.shuffle(special_char)
             yield ''.join(special_char)
     else:
+        j = skip
         for i in open("pangrams.txt", 'r'):
+            if j >= len(i):  # NOTE: length of the sentence may be needed to be decremented by 1 (because of \n)
+                j -= len(i)
+                continue
+            elif j > 0:
+                yield i[j:]
+                j = 0
+                continue
             yield i
 
 
 def train(train_type):
-    data = load_pangrams(train_type)
+    char_count = load_char_info()
+    data = load_pangrams(train_type, sum(char_count[train_type].values()))
     ch = 0
-    sentence = "start!"
+    sentence = next(data, None)[:-1]
+    if sentence is None:
+        print("Done")
+        return
+    if train_type == "upper":
+        sentence = sentence.upper()
+    elif train_type == "lower":
+        sentence = sentence.lower()
     while True:
         win.fill((255, 255, 255))
         for event in pygame.event.get():
@@ -60,17 +91,21 @@ def train(train_type):
                 if event.key == pygame.K_ESCAPE:
                     return
                 if event.key == pygame.K_SPACE:
+                    if (train_type != "other") and (sentence[ch] in SPECIAL_CHARS):
+                        char_count["other"][sentence[ch]] += 1
+                    else:
+                        char_count[train_type][sentence[ch]] += 1
                     ch += 1
-                    if ch > len(sentence):
+                    if ch > len(sentence) - 1:
                         ch = 0
                         sentence = next(data, None)[:-1]
+                        if sentence is None:
+                            print("Done")
+                            break
                         if train_type == "upper":
                             sentence = sentence.upper()
                         elif train_type == "lower":
                             sentence = sentence.lower()
-                        if sentence is None:
-                            print("Done")
-                            break
 
         write(train_type, 10, 10, size=50)
         write(sentence[ch:], 10, 100, color=(100, 100, 100))

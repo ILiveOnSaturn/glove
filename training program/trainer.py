@@ -2,6 +2,7 @@ import pygame
 import random
 import json
 from string import ascii_lowercase, ascii_uppercase
+import serial
 
 pygame.init()
 WIDTH = 1200
@@ -11,6 +12,24 @@ pygame.display.set_caption("Glove Trainer")
 
 clock = pygame.time.Clock()
 SPECIAL_CHARS = "!@#$%^&*()_-+=/?<>\"', .;:1234567890[]{}`~↑↓→←↩"
+
+term = serial.Serial("/dev/tty", 115200)
+received_letter = False
+
+
+def read_term_thread():
+    global received_letter
+    while True:
+        term.read_until('<')
+        data = term.read_until('>')
+        received_letter = True
+        if data[-1] == '-':
+            print("done")
+            pygame.quit()
+            quit()
+        data = data[:-1].split('|')
+
+
 
 
 def write(txt, x, y, font="arial", color=(0, 0, 0), size=30, aa=True, angle=0):

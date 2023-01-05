@@ -16,20 +16,21 @@ SPECIAL_CHARS = "!@#$%^&*()_-+=/?<>\"', .;:1234567890[]{}`~↑↓→←↩"
 term = serial.Serial("/dev/tty", 115200)
 received_letter = False
 
+glove_data = []
+session_data = []
+
 
 def read_term_thread():
     global received_letter
+    global glove_data
     while True:
         term.read_until('<')
         data = term.read_until('>')
         received_letter = True
         if data[-1] == '-':
             print("done")
-            pygame.quit()
-            quit()
-        data = data[:-1].split('|')
-
-
+            break
+        glove_data = data[:-1].split('|')
 
 
 def write(txt, x, y, font="arial", color=(0, 0, 0), size=30, aa=True, angle=0):
@@ -89,6 +90,7 @@ def load_pangrams(types, skip, loop=250):
 
 
 def train(train_type):
+    global glove_data
     char_count = load_char_info()
     data = load_pangrams(train_type, sum(char_count[train_type].values()))
     ch = 0
@@ -109,22 +111,24 @@ def train(train_type):
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_ESCAPE:
                     return
-                if event.key == pygame.K_SPACE:
-                    if (train_type != "other") and (sentence[ch] in SPECIAL_CHARS):
-                        char_count["other"][sentence[ch]] += 1
-                    else:
-                        char_count[train_type][sentence[ch]] += 1
-                    ch += 1
-                    if ch > len(sentence) - 1:
-                        ch = 0
-                        sentence = next(data, None)[:-1]
-                        if sentence is None:
-                            print("Done")
-                            break
-                        if train_type == "upper":
-                            sentence = sentence.upper()
-                        elif train_type == "lower":
-                            sentence = sentence.lower()
+
+        if received_letter:
+            session_data.append([received_letter]+glove_data)
+            if (train_type != "other") and (sentence[ch] in SPECIAL_CHARS):
+                char_count["other"][sentence[ch]] += 1
+            else:
+                char_count[train_type][sentence[ch]] += 1
+            ch += 1
+            if ch > len(sentence) - 1:
+                ch = 0
+                sentence = next(data, None)[:-1]
+                if sentence is None:
+                    print("Done")
+                    break
+                if train_type == "upper":
+                    sentence = sentence.upper()
+                elif train_type == "lower":
+                    sentence = sentence.lower()
 
         write(train_type, 10, 10, size=50)
         write(sentence[ch:], 10, 100, color=(100, 100, 100))

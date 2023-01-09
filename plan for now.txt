@@ -1,0 +1,7 @@
+###09.01.2023###
+it seems that i cannot use tensorflow with micro controllers together with circuitpython, or at least not in an easy way, so for now i will use the opportunity and code everything in c/c++.
+i will use the pico sdk and tflite-micro generator to build the project. (https://github.com/raspberrypi/pico-tflmicro, https://github.com/tensorflow/tflite-micro)
+with the imu i have 2 options, write a new interface or use the one written for me by the ebay guy, only problem is that its written for arduino, so ill need to check.
+for hid interface, ill use tinyusb, as its the only option i have, even though the documentations are nearly empty. ill have to learn from the examples or some weird tutorial online. make sure you learn about DEVICE MODE and not host mode. (https://docs.tinyusb.org/en/latest/reference/getting_started.html)
+i need to learn how to use cmake since it seems ill be using it for this project.
+why is c so hellish?

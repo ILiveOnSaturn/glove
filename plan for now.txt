@@ -5,3 +5,6 @@ with the imu i have 2 options, write a new interface or use the one written for 
 for hid interface, ill use tinyusb, as its the only option i have, even though the documentations are nearly empty. ill have to learn from the examples or some weird tutorial online. make sure you learn about DEVICE MODE and not host mode. (https://docs.tinyusb.org/en/latest/reference/getting_started.html)
 i need to learn how to use cmake since it seems ill be using it for this project.
 why is c so hellish?
+
+###11.01.2023###
+i tried to make the onboard code ready but there is no way of knowing without building the glove, oh well.

@@ -107,7 +107,6 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/media/shared drive/electronics/pico git stuff/pico-sdk/src/common/pico_binary_info/include"
   "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/pico_stdio/include"
   "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/pico_stdio_uart/include"
-  "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/hardware_i2c/include"
   )
 
 # The set of dependency files which are needed:
@@ -125,7 +124,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/hardware_claim/claim.c" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj" "gcc" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj.d"
   "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/hardware_clocks/clocks.c" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj" "gcc" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj.d"
   "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/hardware_gpio/gpio.c" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" "gcc" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj.d"
-  "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj" "gcc" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj.d"
   "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/hardware_irq/irq.c" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj" "gcc" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj.d"
   "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/hardware_pll/pll.c" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj" "gcc" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj.d"
   "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/hardware_sync/sync.c" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj" "gcc" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj.d"

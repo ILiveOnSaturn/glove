@@ -1,0 +1,3 @@
+/media/shared drive/electronics/glove/onboard code/glove/build/pioasm/CMakeFiles/pioasm.dir
+/media/shared drive/electronics/glove/onboard code/glove/build/pioasm/CMakeFiles/edit_cache.dir
+/media/shared drive/electronics/glove/onboard code/glove/build/pioasm/CMakeFiles/rebuild_cache.dir

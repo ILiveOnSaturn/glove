@@ -540,30 +540,6 @@ media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_g
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
-media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
-.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj
-
-# target to build an object file
-media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
-.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
-
-media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
-.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.i
-
-# target to preprocess a source file
-media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
-.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
-
-media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
-.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.s
-
-# target to generate assembly for a file
-media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
-.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
-
 media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_irq/irq.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_irq/irq.obj
 
@@ -1228,9 +1204,6 @@ help:
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_gpio/gpio.i"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_gpio/gpio.s"
-	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj"
-	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.i"
-	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.s"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_irq/irq.obj"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_irq/irq.i"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_irq/irq.s"

@@ -35,19 +35,14 @@ pico_enable_stdio_usb(glove 0)
 
 # Add the standard library to the build
 target_link_libraries(glove
-        pico_stdlib)
+        pico_stdlib
+        )
 
 # Add the standard include files to the build
 target_include_directories(glove PRIVATE
   ${CMAKE_CURRENT_LIST_DIR}
   ${CMAKE_CURRENT_LIST_DIR}/.. # for our common lwipopts or any other standard includes, if required
 )
-
-# Add any user requested libraries
-target_link_libraries(glove
-        hardware_i2c
-        pico-tflmicro
-        )
 
 pico_add_extra_outputs(glove)
 

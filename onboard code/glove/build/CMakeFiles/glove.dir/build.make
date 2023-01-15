@@ -702,20 +702,6 @@ CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c" -o CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
-CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: CMakeFiles/glove.dir/flags.make
-CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
-CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: CMakeFiles/glove.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/shared drive/electronics/glove/onboard code/glove/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj -MF CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj.d -o CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj -c "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c"
-
-CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c" > CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
-
-CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c" -o CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
-
 # Object files for target glove
 glove_OBJECTS = \
 "CMakeFiles/glove.dir/glove.c.obj" \
@@ -763,8 +749,7 @@ glove_OBJECTS = \
 "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" \
 "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj" \
 "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj" \
-"CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj" \
-"CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"
+"CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
 
 # External object files for target glove
 glove_EXTERNAL_OBJECTS =
@@ -815,11 +800,10 @@ glove.elf: CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pi
 glove.elf: CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 glove.elf: CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 glove.elf: CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-glove.elf: CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 glove.elf: CMakeFiles/glove.dir/build.make
 glove.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 glove.elf: CMakeFiles/glove.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/media/shared drive/electronics/glove/onboard code/glove/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_48) "Linking CXX executable glove.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/media/shared drive/electronics/glove/onboard code/glove/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_47) "Linking CXX executable glove.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glove.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/arm-none-eabi-objcopy -Oihex /media/shared\ drive/electronics/glove/onboard\ code/glove/build/glove.elf glove.hex
 	/usr/bin/arm-none-eabi-objcopy -Obinary /media/shared\ drive/electronics/glove/onboard\ code/glove/build/glove.elf glove.bin

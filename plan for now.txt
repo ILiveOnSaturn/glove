@@ -8,3 +8,6 @@ why is c so hellish?
 
 ###11.01.2023###
 i tried to make the onboard code ready but there is no way of knowing without building the glove, oh well.
+
+###15.01.2023###
+i just tried to make the save function in the training program and i realized that i need to rethink about how the array works. fix this.

@@ -1,5 +1,4 @@
 import threading
-
 import pygame
 import random
 import json
@@ -22,6 +21,15 @@ glove_data = []
 session_data = []
 
 
+def save_data():
+    global session_data
+    new_data = [] #FIX THIS
+    for i in session_data:
+        new_data.append([int(j) for j in i.split(',')])
+    session_data = []
+
+
+
 def read_term_thread():
     global received_letter
     global glove_data
@@ -29,7 +37,7 @@ def read_term_thread():
         term.read_until('<')
         data = term.read_until('>')
         received_letter = True
-        if data[-1] == '-':
+        if data[-2] == '-':
             print("done")
             break
         glove_data = data[:-1].split('|')

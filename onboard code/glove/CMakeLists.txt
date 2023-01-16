@@ -33,11 +33,16 @@ pico_set_program_version(glove "0.1")
 pico_enable_stdio_uart(glove 1)
 pico_enable_stdio_usb(glove 0)
 
+target_sources(glove PUBLIC
+		glove.c
+		usb_descriptors.c
+		)
+
 # Add the standard library to the build
 target_link_libraries(glove
         pico_stdlib
-        tinyusb_dev
-	tinyusb_board
+        tinyusb_device
+		tinyusb_board
 	)
 
 # Add the standard include files to the build

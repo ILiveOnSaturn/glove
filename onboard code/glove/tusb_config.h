@@ -11,8 +11,8 @@
  */
 
 
-#ifndef _TUSB_CONFIG_H //if there is another configuration then ignore this one
-#define _TUSB_CONFIG_H
+#ifndef _TUSB_CONFIG_H_ //if there is another configuration then ignore this one
+#define _TUSB_CONFIG_H_
 
 #ifdef __cplusplus
 extern "C" { //make it in C format
@@ -27,7 +27,9 @@ extern "C" { //make it in C format
 #define CFT_TUSB_MCU OPT_MCU_RP2040
 #endif
 
+#ifndef CFG_TUSB_OS
 #define CFG_TUSB_OS OPT_OS_NONE //apparantly microcontrollers have os these days. thought their whole point was getting rid of it.
+#endif
 
 #define CFG_TUD_ENDPOINT0_SIZE 64
 
@@ -37,6 +39,14 @@ extern "C" { //make it in C format
 #define CFG_TUD_HID               1
 #define CFG_TUD_MIDI              0
 #define CFG_TUD_VENDOR            0
+
+
+//------------- DEVICE -------------//
+#define CFG_HID_KEYBOARD          1
+#define CFG_HID_MOUSE             1
+#define CFG_HID_MOUSE_ABS         0 //be careful about this, this might be the scrolling
+#define CFG_HID_GAMEPAD           0
+#define CFG_HID_CONSUMER          0 //maybe will use this later
 
 #define CFG_TUD_HID_EP_BUFSIZE 16 //sets buffer size. this should be enough.
 

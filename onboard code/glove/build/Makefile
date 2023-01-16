@@ -244,6 +244,462 @@ glove.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/glove.c.s
 .PHONY : glove.c.s
 
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.obj
+
+# target to build an object file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.i
+
+# target to preprocess a source file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.s
+
+# target to generate assembly for a file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
+
+# target to build an object file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i
+
+# target to preprocess a source file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s
+
+# target to generate assembly for a file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj
+
+# target to build an object file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i
+
+# target to preprocess a source file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s
+
+# target to generate assembly for a file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj
+
+# target to build an object file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i
+
+# target to preprocess a source file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s
+
+# target to generate assembly for a file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj
+
+# target to build an object file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i
+
+# target to preprocess a source file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s
+
+# target to generate assembly for a file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj
+
+# target to build an object file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i
+
+# target to preprocess a source file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s
+
+# target to generate assembly for a file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj
+
+# target to build an object file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i
+
+# target to preprocess a source file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s
+
+# target to generate assembly for a file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj
+
+# target to build an object file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i
+
+# target to preprocess a source file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s
+
+# target to generate assembly for a file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj
+
+# target to build an object file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i
+
+# target to preprocess a source file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s
+
+# target to generate assembly for a file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj
+
+# target to build an object file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i
+
+# target to preprocess a source file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s
+
+# target to generate assembly for a file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj
+
+# target to build an object file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i
+
+# target to preprocess a source file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s
+
+# target to generate assembly for a file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj
+
+# target to build an object file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i
+
+# target to preprocess a source file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s
+
+# target to generate assembly for a file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/video/video_device.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/video/video_device.obj
+
+# target to build an object file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/video/video_device.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/video/video_device.i
+
+# target to preprocess a source file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/video/video_device.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/video/video_device.s
+
+# target to generate assembly for a file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj
+
+# target to build an object file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i
+
+# target to preprocess a source file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s
+
+# target to generate assembly for a file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd.obj
+
+# target to build an object file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd.i
+
+# target to preprocess a source file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd.s
+
+# target to generate assembly for a file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd_control.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd_control.obj
+
+# target to build an object file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd_control.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd_control.i
+
+# target to preprocess a source file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd_control.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd_control.s
+
+# target to generate assembly for a file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj
+
+# target to build an object file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i
+
+# target to preprocess a source file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s
+
+# target to generate assembly for a file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj
+
+# target to build an object file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i
+
+# target to preprocess a source file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s
+
+# target to generate assembly for a file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/tusb.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/tusb.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/tusb.obj
+
+# target to build an object file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/tusb.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/tusb.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/tusb.c.obj
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/tusb.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/tusb.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/tusb.i
+
+# target to preprocess a source file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/tusb.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/tusb.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/tusb.c.i
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/tusb.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/tusb.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/tusb.s
+
+# target to generate assembly for a file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/tusb.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/tusb.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/tusb.c.s
+
 media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/common/pico_sync/critical_section.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/common/pico_sync/critical_section.obj
 
@@ -844,6 +1300,30 @@ media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_doubl
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 .PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj
+
+# target to build an object file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i
+
+# target to preprocess a source file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s
+
+# target to generate assembly for a file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+
 media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 .PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj
 
@@ -1148,6 +1628,30 @@ media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdli
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
+usb_descriptors.obj: usb_descriptors.c.obj
+.PHONY : usb_descriptors.obj
+
+# target to build an object file
+usb_descriptors.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/usb_descriptors.c.obj
+.PHONY : usb_descriptors.c.obj
+
+usb_descriptors.i: usb_descriptors.c.i
+.PHONY : usb_descriptors.i
+
+# target to preprocess a source file
+usb_descriptors.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/usb_descriptors.c.i
+.PHONY : usb_descriptors.c.i
+
+usb_descriptors.s: usb_descriptors.c.s
+.PHONY : usb_descriptors.s
+
+# target to generate assembly for a file
+usb_descriptors.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/usb_descriptors.c.s
+.PHONY : usb_descriptors.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1167,6 +1671,63 @@ help:
 	@echo "... glove.obj"
 	@echo "... glove.i"
 	@echo "... glove.s"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.i"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.s"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/video/video_device.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/video/video_device.i"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/video/video_device.s"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd.i"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd.s"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd_control.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd_control.i"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/device/usbd_control.s"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/tusb.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/tusb.i"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/tusb.s"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/common/pico_sync/critical_section.obj"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/common/pico_sync/critical_section.i"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/common/pico_sync/critical_section.s"
@@ -1242,6 +1803,9 @@ help:
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_double/double_math.i"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_double/double_math.s"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_float/float_init_rom.i"
@@ -1280,6 +1844,9 @@ help:
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s"
+	@echo "... usb_descriptors.obj"
+	@echo "... usb_descriptors.i"
+	@echo "... usb_descriptors.s"
 .PHONY : help
 
 

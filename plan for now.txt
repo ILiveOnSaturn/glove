@@ -15,3 +15,6 @@ i just tried to make the save function in the training program and i realized th
 ###16.01.2023###
 i am figuring out little by little how tiny usb works. its kinda cool once u know it. basically there is a config file and a descriptor file and rn im currently in the config file so there are a bunch of defines and stuff. the only thing im having a hard time figuring out is the rhport.
 ok so rhport is basically for boards who have multiple usb connections and its used to choose which port i want to use. ig ill go with port 0 for now.
+
+###17.01.2023###
+finally done with usb_descriptor.c, now i need to add the cool functions for the main program.

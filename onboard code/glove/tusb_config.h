@@ -41,13 +41,6 @@ extern "C" { //make it in C format
 #define CFG_TUD_VENDOR            0
 
 
-//------------- DEVICE -------------//
-#define CFG_HID_KEYBOARD          1
-#define CFG_HID_MOUSE             1
-#define CFG_HID_MOUSE_ABS         0 //be careful about this, this might be the scrolling
-#define CFG_HID_GAMEPAD           0
-#define CFG_HID_CONSUMER          0 //maybe will use this later
-
 #define CFG_TUD_HID_EP_BUFSIZE 16 //sets buffer size. this should be enough.
 
 #ifdef __cplusplus

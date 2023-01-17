@@ -1,4 +1,5 @@
 #include "tusb.h"
+#include "usb_descriptors.h"
 
 #define PID_MAP(itf, n)  ((CFG_TUD_##itf) << (n))
 #define USB_PID (0x4000 | PID_MAP(CDC, 0) | PID_MAP(MSC, 1) | PID_MAP(HID, 2) | PID_MAP(MIDI, 3) | PID_MAP(VENDOR, 4))
@@ -33,13 +34,6 @@ uint8_t const * tud_descriptor_device_cb(void) {
     return (uint8_t const *) &desc_device;
 }
 
-//for some reason it was in the descriptors instead of the tusb_config. maybe change in the future.
-#define REPORT_ID_KEYBOARD              1
-#define REPORT_ID_MOUSE                 2
-#define REPORT_ID_MOUSE_ABS             3
-#define REPORT_ID_GAMEPAD               4
-#define REPORT_ID_CONSUMER_CONTROL      5
-
 uint8_t const desc_hid_report[] =
         {
                 TUD_HID_REPORT_DESC_KEYBOARD( HID_REPORT_ID(REPORT_ID_KEYBOARD         )),
@@ -51,5 +45,33 @@ uint8_t const desc_hid_report[] =
 uint8_t const * tud_hid_descriptor_report_cb(uint8_t instance) {
     (void) instance;
     return desc_hid_report;
+}
+
+
+enum {
+    ITF_NUM_HID, //0
+    ITF_NUM_TOTAL //1
+};
+
+#define CONFIG_TOTAL_LEN (TUD_CONFIG_DESC_LEN + TUD_HID_DESC_LEN) //config len plus hid len for total len.
+
+#define EPNUM_HID 0x81 //this is the epin for the hid, but i dont know why this is 0x81
+
+uint8_t const desc_configuration[] = {
+    TUD_CONFIG_DESCRIPTOR(1, ITF_NUM_TOTAL, 0, CONFIG_TOTAL_LEN, TUSB_DESC_CONFIG_ATT_REMOTE_WAKEUP, 100),
+    TUD_HID_DESCRIPTOR(ITF_NUM_HID, 0, HID_ITF_PROTOCOL_NONE, sizeof(desc_hid_report), EPNUM_HID, CFG_TUD_HID_EP_BUFSIZE, 5)
+};
+
+uint8_t const * tud_descriptor_configuration_cb(uint8_t index) {
+    (void) index;
+    return desc_configuration;
+}
+
+
+char const* string_desc_arr[] = {
+    (const char[]) {0x09, 0x04}, //0. supported language is english 0x0409
+    "I_live_on_saturn TM", //1. manufacturer
+    "somatic glove", //2. product
+    "123", //3. serial, should be chip id
 }
 

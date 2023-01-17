@@ -49,4 +49,53 @@ CMakeFiles/glove.dir/glove.c.obj: \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
- /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/tusb.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_common.h \
+ /usr/arm-none-eabi/include/string.h \
+ /usr/arm-none-eabi/include/sys/reent.h \
+ /usr/arm-none-eabi/include/_ansi.h \
+ /usr/arm-none-eabi/include/sys/_types.h \
+ /usr/arm-none-eabi/include/machine/_types.h \
+ /usr/arm-none-eabi/include/sys/lock.h \
+ /usr/arm-none-eabi/include/sys/_locale.h \
+ /usr/arm-none-eabi/include/strings.h \
+ /usr/arm-none-eabi/include/sys/string.h \
+ /usr/arm-none-eabi/include/stdio.h \
+ /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdarg.h \
+ /usr/arm-none-eabi/include/sys/types.h \
+ /usr/arm-none-eabi/include/machine/endian.h \
+ /usr/arm-none-eabi/include/machine/_endian.h \
+ /usr/arm-none-eabi/include/sys/select.h \
+ /usr/arm-none-eabi/include/sys/_sigset.h \
+ /usr/arm-none-eabi/include/sys/_timeval.h \
+ /usr/arm-none-eabi/include/sys/timespec.h \
+ /usr/arm-none-eabi/include/sys/_timespec.h \
+ /usr/arm-none-eabi/include/sys/_pthreadtypes.h \
+ /usr/arm-none-eabi/include/sys/sched.h \
+ /usr/arm-none-eabi/include/machine/types.h \
+ /usr/arm-none-eabi/include/sys/stdio.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/tusb_option.h \
+ /media/shared\ drive/electronics/glove/onboard\ code/glove/tusb_config.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_compiler.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_verify.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_types.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_error.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_timeout.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/osal/osal.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_common.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/osal/osal_pico.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_sync/include/pico/sem.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_sync/include/pico/mutex.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_sync/include/pico/critical_section.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_fifo.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/osal/osal.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_fifo.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/device/usbd.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/class/hid/hid_device.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/class/hid/hid.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/hw/bsp/board.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/hw/bsp/ansi_escape.h \
+ /media/shared\ drive/electronics/glove/onboard\ code/glove/usb_descriptors.h

@@ -7,6 +7,6 @@ enum {
     REPORT_ID_CONSUMER_CONTROL,
     REPORT_ID_GAMEPAD,
     REPORT_ID_COUNT
-}
+};
 
 #endif

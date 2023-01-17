@@ -6,7 +6,7 @@
  * the documentation for it.
  *
  * Although this file is just a bunch of defines
- * and stuff, apparantly its important for the usb
+ * and stuff, apparantly it's important for the usb
  * architechture or something.
  */
 
@@ -47,4 +47,4 @@ extern "C" { //make it in C format
 } //extern "C" close
 #endif
 
-#endif //_TUSB_CONFIG_H
+#endif //_TUSB_CONFIG_H_

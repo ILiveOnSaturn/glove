@@ -18,3 +18,7 @@ ok so rhport is basically for boards who have multiple usb connections and its u
 
 ###17.01.2023###
 finally done with usb_descriptor.c, now i need to add the cool functions for the main program.
+
+###18.01.2023###
+i continued with the glove.c program and i got stuck at the tinyusb functions since there is no documentation. 
+i found this cool project on github which i could study from: https://github.com/raspberrypi/pico-examples/blob/master/usb/device/dev_hid_composite/main.c

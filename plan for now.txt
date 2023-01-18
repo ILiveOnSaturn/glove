@@ -21,4 +21,7 @@ finally done with usb_descriptor.c, now i need to add the cool functions for the
 
 ###18.01.2023###
 i continued with the glove.c program and i got stuck at the tinyusb functions since there is no documentation. 
-i found this cool project on github which i could study from: https://github.com/raspberrypi/pico-examples/blob/master/usb/device/dev_hid_composite/main.c
+i found this cool project on github which i could study from: https://github.com/diminDDL/picoMacro/tree/main/PicoMacroC
+the lack of information is literally killing me rn. im trying to find information about the get_report and what it sends but i found little to no information.
+found this website that talks kind of in depth about the kernel and the hid core: https://www.kernel.org/doc/Documentation/hid/hid-transport.txt
+there's no way i can continue making code for the pico without any debugger. maybe i should do one with the cdc com (preferred way) or i should do one with uart. whatever is possible.

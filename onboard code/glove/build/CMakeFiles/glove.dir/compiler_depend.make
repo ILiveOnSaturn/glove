@@ -99,6 +99,8 @@ CMakeFiles/glove.dir/glove.c.obj: /media/shared\ drive/electronics/glove/onboard
   /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/device/usbd.h \
   /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/class/hid/hid_device.h \
   /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/class/hid/hid.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/hw/bsp/board.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/hw/bsp/ansi_escape.h \
   /media/shared\ drive/electronics/glove/onboard\ code/glove/usb_descriptors.h
 
 CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj: /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c \
@@ -2868,6 +2870,14 @@ generated/pico_base/pico/config_autogen.h:
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/class/hid/hid.h:
 
+/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/hw/bsp/board.h:
+
+/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h:
+
+/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/device/dcd.h:
+
+/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/hw/bsp/ansi_escape.h:
+
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h:
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_common.h:
@@ -2883,14 +2893,6 @@ generated/pico_base/pico/config_autogen.h:
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/xosc.h:
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h:
-
-/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/hw/bsp/board.h:
-
-/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h:
-
-/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/device/dcd.h:
-
-/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/hw/bsp/ansi_escape.h:
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c:
 

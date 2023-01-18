@@ -25,3 +25,4 @@ i found this cool project on github which i could study from: https://github.com
 the lack of information is literally killing me rn. im trying to find information about the get_report and what it sends but i found little to no information.
 found this website that talks kind of in depth about the kernel and the hid core: https://www.kernel.org/doc/Documentation/hid/hid-transport.txt
 there's no way i can continue making code for the pico without any debugger. maybe i should do one with the cdc com (preferred way) or i should do one with uart. whatever is possible.
+i have looked a bit and uart seems like the better and faster option. it can make it so i could actually read the errors and not just the printf. i think. only problem with that is the cables taht will go out of the casing.

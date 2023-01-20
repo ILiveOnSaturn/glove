@@ -29,3 +29,6 @@ i have looked a bit and uart seems like the better and faster option. it can mak
 
 ###19.01.2023###
 i have tried soldering the pico to use uart debugging but for some reason in my pc it crashes and in my raspberry pi 4b it doesn't, so it isnt really worth using uart debugging. now i need to learn how to do cdc com. fuck.
+
+###20.01.2023###
+i added cdc connection for debugging, just need to see if it works and then build the glove.

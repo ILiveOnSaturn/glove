@@ -12,9 +12,11 @@ const tusb_desc_device_t desc_device =
     .bLength = sizeof(tusb_desc_device_t), //size
     .bDescriptorType = TUSB_DESC_DEVICE, //constant from tiny usb.
     .bcdUSB = USB_BCD, //usb version. using usb 2.0
-    .bDeviceClass = 0x00, //class code. should be 0 so each interface specifies its own class. this is zero because we dont use vendor.
-    .bDeviceSubClass = 0x00, //because device class is zero this aswell needs to be zero.
-    .bDeviceProtocol = 0x00, //this is dependent of device class and needs to be zero because we dont use vendor.
+
+    .bDeviceClass = TUSB_CLASS_MISC, //use iad protocol (multiple interfaces?) for cdc communication
+    .bDeviceSubClass = MISC_SUBCLASS_COMMON,
+    .bDeviceProtocol = MISC_PROTOCOL_IAD,
+
     .bMaxPacketSize0 = CFG_TUD_ENDPOINT0_SIZE, //max packet size in endpoint0.
 
     .idVendor = USB_VID, //vendor id
@@ -48,9 +50,15 @@ uint8_t const * tud_hid_descriptor_report_cb(uint8_t instance) {
 
 
 enum {
-    ITF_NUM_HID, //0
-    ITF_NUM_TOTAL //1
+    ITF_NUM_CDC = 0, //0
+    ITF_NUM_CDC_DATA, //1
+    ITF_NUM_HID, //2
+    ITF_NUM_TOTAL //3
 };
+
+#define EPNUM_CDC_0_NOTIF 0x81
+#define EPNUM_CDC_0_OUT 0x02
+#define EPNUM_CDC_0_IN 0x82
 
 #define CONFIG_TOTAL_LEN (TUD_CONFIG_DESC_LEN + TUD_HID_DESC_LEN) //config len plus hid len for total len.
 
@@ -58,6 +66,7 @@ enum {
 
 uint8_t const desc_configuration[] = {
     TUD_CONFIG_DESCRIPTOR(1, ITF_NUM_TOTAL, 0, CONFIG_TOTAL_LEN, TUSB_DESC_CONFIG_ATT_REMOTE_WAKEUP, 100),
+    TUD_CDC_DESCRIPTOR(ITF_NUM_CDC, 4, EPNUM_CDC_0_NOTIF, 8, EPNUM_CDC_0_OUT, EPNUM_CDC_0_IN, 64),
     TUD_HID_DESCRIPTOR(ITF_NUM_HID, 0, HID_ITF_PROTOCOL_NONE, sizeof(desc_hid_report), EPNUM_HID, CFG_TUD_HID_EP_BUFSIZE, 5)
 };
 
@@ -66,12 +75,12 @@ uint8_t const * tud_descriptor_configuration_cb(uint8_t index) {
     return desc_configuration;
 }
 
-
 char const* string_desc_arr[] = {
     (const char[]) {0x09, 0x04}, //0. supported language is english 0x0409
     "I_live_on_saturn TM", //1. manufacturer
     "somatic glove", //2. product
-    "123", //3. serial, should be chip id
+    "0584330624", //3. serial, should be chip id, but i used my phone number cuz rp2040 is annoying with their id.
+    "glove cdc" //4. cdc interface
 };
 
 static uint16_t desc_str[32];

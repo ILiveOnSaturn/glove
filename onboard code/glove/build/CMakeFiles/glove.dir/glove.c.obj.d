@@ -49,7 +49,7 @@ CMakeFiles/glove.dir/glove.c.obj: \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
- /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/tusb.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_common.h \
  /usr/arm-none-eabi/include/string.h \
@@ -96,6 +96,8 @@ CMakeFiles/glove.dir/glove.c.obj: \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/device/usbd.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/class/hid/hid_device.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/class/hid/hid.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/hw/bsp/board.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/hw/bsp/ansi_escape.h \
  /media/shared\ drive/electronics/glove/onboard\ code/glove/usb_descriptors.h

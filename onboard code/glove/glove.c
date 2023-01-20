@@ -10,6 +10,7 @@ int main()
 #warning blink has no led
 #else
     tusb_init();
+    stdio_init_all();
     const uint LED_PIN = PICO_DEFAULT_LED_PIN;
     gpio_init(LED_PIN);
     gpio_set_dir(LED_PIN, GPIO_OUT);
@@ -49,10 +50,9 @@ uint16_t tud_hid_get_report_cb(uint8_t instance, uint8_t report_id, hid_report_t
     return 0;
 }
 
-void tud_hid_set_report_cb(uint8_t instance, uint8_t report_id, hid_report_type_t report_type, uint8_t const* buffer, uint16_t bufsize) { //gets buffer from host. can be used to check key presses. dont really need it rn.
+void tud_hid_set_report_cb(uint8_t instance, uint8_t report_id, hid_report_type_t report_type, uint8_t const* buffer, uint16_t bufsize) { //gets buffer from host. can be used to check key presses. don't really need it rn.
     (void) instance;
     (void) report_id;
     (void) report_type;
-    (void) buffer;
-    (void) bufsize;
+    tud_hid_report(0, buffer, bufsize);
 }

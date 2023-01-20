@@ -80,5 +80,7 @@ CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/device/usbd.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/class/hid/hid_device.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/class/hid/hid.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/device/usbd_pvt.h \
  /usr/arm-none-eabi/include/ctype.h

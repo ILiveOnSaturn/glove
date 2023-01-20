@@ -972,6 +972,30 @@ media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_d
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_flash/flash.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_flash/flash.obj
+
+# target to build an object file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_flash/flash.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_flash/flash.i
+
+# target to preprocess a source file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_flash/flash.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_flash/flash.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_flash/flash.s
+
+# target to generate assembly for a file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_flash/flash.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+
 media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj
 
@@ -1580,29 +1604,77 @@ media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
-media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj
 
 # target to build an object file
-media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
 
-media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i
 
 # target to preprocess a source file
-media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 
-media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s
 
 # target to generate assembly for a file
-media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj
+
+# target to build an object file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i
+
+# target to preprocess a source file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s
+
+# target to generate assembly for a file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj
+
+# target to build an object file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i
+
+# target to preprocess a source file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s
+
+# target to generate assembly for a file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 
 media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj
@@ -1627,6 +1699,30 @@ media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdli
 media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj
+
+# target to build an object file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i
+
+# target to preprocess a source file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s
+
+# target to generate assembly for a file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
 usb_descriptors.obj: usb_descriptors.c.obj
 .PHONY : usb_descriptors.obj
@@ -1762,6 +1858,9 @@ help:
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_clocks/clocks.i"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_clocks/clocks.s"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_divider/divider.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_flash/flash.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_flash/flash.i"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_flash/flash.s"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_gpio/gpio.i"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_gpio/gpio.s"
@@ -1838,12 +1937,21 @@ help:
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio/stdio.obj"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio/stdio.i"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio/stdio.s"
-	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj"
-	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i"
-	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s"
 	@echo "... usb_descriptors.obj"
 	@echo "... usb_descriptors.i"
 	@echo "... usb_descriptors.s"

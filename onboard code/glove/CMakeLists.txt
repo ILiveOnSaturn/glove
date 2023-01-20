@@ -30,8 +30,8 @@ add_executable(glove glove.c )
 pico_set_program_name(glove "glove")
 pico_set_program_version(glove "0.1")
 
-pico_enable_stdio_uart(glove 1)
-pico_enable_stdio_usb(glove 0)
+pico_enable_stdio_uart(glove 0)
+pico_enable_stdio_usb(glove 1)
 
 target_sources(glove PUBLIC
 		glove.c

@@ -1,5 +1,5 @@
-CMakeFiles/glove.dir/usb_descriptors.c.obj: \
- /media/shared\ drive/electronics/glove/onboard\ code/glove/usb_descriptors.c \
+CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj: \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/tusb.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_common.h \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h \
@@ -81,4 +81,13 @@ CMakeFiles/glove.dir/usb_descriptors.c.obj: \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/class/hid/hid.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc.h \
- /media/shared\ drive/electronics/glove/onboard\ code/glove/usb_descriptors.h
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio/driver.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+ /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h

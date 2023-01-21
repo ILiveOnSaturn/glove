@@ -60,7 +60,7 @@ enum {
 #define EPNUM_CDC_0_OUT 0x02
 #define EPNUM_CDC_0_IN 0x82
 
-#define CONFIG_TOTAL_LEN (TUD_CONFIG_DESC_LEN + TUD_HID_DESC_LEN) //config len plus hid len for total len.
+#define CONFIG_TOTAL_LEN (TUD_CONFIG_DESC_LEN + TUD_HID_DESC_LEN + TUD_CDC_DESC_LEN) //config len plus hid len for total len.
 
 #define EPNUM_HID 0x81 //this is the epin for the hid, but i don't know why this is 0x81
 
@@ -79,7 +79,7 @@ char const* string_desc_arr[] = {
     (const char[]) {0x09, 0x04}, //0. supported language is english 0x0409
     "I_live_on_saturn TM", //1. manufacturer
     "somatic glove", //2. product
-    "0584330624", //3. serial, should be chip id, but i used my phone number cuz rp2040 is annoying with their id.
+    "2e8a:0003", //3. serial, should be chip id, but i used my phone number cuz rp2040 is annoying with their id.
     "glove cdc" //4. cdc interface
 };
 

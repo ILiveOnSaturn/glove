@@ -23,11 +23,10 @@ session_data = []
 
 def save_data():
     global session_data
-    new_data = [] #FIX THIS
+    new_data = []  # TODO FIX THIS
     for i in session_data:
-        new_data.append([int(j) for j in i.split(',')])
+        new_data.append(i[0]+[int(j) for j in i[1:].split(',')])
     session_data = []
-
 
 
 def read_term_thread():

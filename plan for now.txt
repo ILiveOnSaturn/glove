@@ -32,3 +32,6 @@ i have tried soldering the pico to use uart debugging but for some reason in my 
 
 ###20.01.2023###
 i added cdc connection for debugging, just need to see if it works and then build the glove.
+
+###21.01.2023###
+i did it i did it i did it i did it i did it i did it i fucking made debugging work lets gooooooooooooooooooo!!!!!!!!!!!!!!!!

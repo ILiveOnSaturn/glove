@@ -14,7 +14,7 @@ pygame.display.set_caption("Glove Trainer")
 clock = pygame.time.Clock()
 SPECIAL_CHARS = "!@#$%^&*()_-+=/?<>\"', .;:1234567890[]{}`~↑↓→←↩"
 
-term = serial.Serial("/dev/tty", 115200)
+term = serial.Serial("/dev/ttyS26", 115200)
 received_letter = False
 
 glove_data = []
@@ -26,7 +26,9 @@ def save_data():
     new_data = []  # TODO FIX THIS
     for i in session_data:
         new_data.append(i[0]+[int(j) for j in i[1:].split(',')])
+    print(new_data)
     session_data = []
+
 
 
 def read_term_thread():
@@ -39,7 +41,7 @@ def read_term_thread():
         if data[-2] == '-':
             print("done")
             break
-        glove_data = data[:-1].split('|')
+        glove_data = data[:-2].split('|')
 
 
 def write(txt, x, y, font="arial", color=(0, 0, 0), size=30, aa=True, angle=0):

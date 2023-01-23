@@ -44,4 +44,4 @@ while not interrupted:
         interrupted = True
 
 finger.deinit()
-data_serial.write("->")
+data_serial.write("<->")

@@ -14,11 +14,13 @@ pygame.display.set_caption("Glove Trainer")
 clock = pygame.time.Clock()
 SPECIAL_CHARS = "!@#$%^&*()_-+=/?<>\"', .;:1234567890[]{}`~↑↓→←↩"
 
-term = serial.Serial("/dev/ttyS26", 115200)
+term = serial.Serial("/dev/ttyACM1", 115200)
 received_letter = False
 
 glove_data = []
 session_data = []
+
+savefile_path = ""
 
 
 def save_data():
@@ -28,7 +30,14 @@ def save_data():
         new_data.append(i[0]+[int(j) for j in i[1:].split(',')])
     print(new_data)
     session_data = []
-
+    try:
+        file = open(savefile_path, 'w')
+        data = json.load(file)
+        data.append(new_data)
+    except FileNotFoundError:
+        file = open(savefile_path, 'x')
+        data = new_data
+    json.dump(data, file)
 
 
 def read_term_thread():
@@ -128,6 +137,7 @@ def train(train_type):
 
         if received_letter:
             session_data.append([sentence[ch]]+glove_data)
+            save_data()
             if (train_type != "other") and (sentence[ch] in SPECIAL_CHARS):
                 char_count["other"][sentence[ch]] += 1
             else:

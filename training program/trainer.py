@@ -14,24 +14,25 @@ pygame.display.set_caption("Glove Trainer")
 clock = pygame.time.Clock()
 SPECIAL_CHARS = "!@#$%^&*()_-+=/?<>\"', .;:1234567890[]{}`~↑↓→←↩"
 
-term = serial.Serial("/dev/ttyACM1", 115200)
+term = serial.Serial("/dev/ttyACM0", 115200)
 received_letter = False
 
 glove_data = []
 session_data = []
 
-savefile_path = ""
-
+savefile_path = "data.json"
+gthread = None
 
 def save_data():
     global session_data
     new_data = []  # TODO FIX THIS
+    print(session_data)
     for i in session_data:
         new_data.append(i[0]+[int(j) for j in i[1:].split(',')])
     print(new_data)
     session_data = []
     try:
-        file = open(savefile_path, 'w')
+        file = open(savefile_path, 'w+')
         data = json.load(file)
         data.append(new_data)
     except FileNotFoundError:
@@ -44,13 +45,14 @@ def read_term_thread():
     global received_letter
     global glove_data
     while True:
-        term.read_until('<')
-        data = term.read_until('>')
-        received_letter = True
+        term.read_until(b'<')
+        data = term.read_until(b'>').decode()
+        print(data)
         if data[-2] == '-':
             print("done")
             break
         glove_data = data[:-2].split('|')
+        received_letter = True
 
 
 def write(txt, x, y, font="arial", color=(0, 0, 0), size=30, aa=True, angle=0):
@@ -112,6 +114,7 @@ def load_pangrams(types, skip, loop=250):
 def train(train_type):
     global glove_data
     global received_letter
+    global gthread
     char_count = load_char_info()
     data = load_pangrams(train_type, sum(char_count[train_type].values()))
     ch = 0
@@ -123,8 +126,11 @@ def train(train_type):
         sentence = sentence.upper()
     elif train_type == "lower":
         sentence = sentence.lower()
-    gthread = threading.Thread(target=read_term_thread)
-    gthread.start()
+    
+    if gthread is None or not gthread.is_alive():
+        gthread = threading.Thread(target=read_term_thread)
+        gthread.start()
+    
     while True:
         win.fill((255, 255, 255))
         for event in pygame.event.get():
@@ -136,7 +142,9 @@ def train(train_type):
                     return
 
         if received_letter:
-            session_data.append([sentence[ch]]+glove_data)
+            #print(sentence[ch])
+            session_data = [sentence[ch]]+glove_data
+            print("saving")
             save_data()
             if (train_type != "other") and (sentence[ch] in SPECIAL_CHARS):
                 char_count["other"][sentence[ch]] += 1

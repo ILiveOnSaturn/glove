@@ -35,3 +35,7 @@ i added cdc connection for debugging, just need to see if it works and then buil
 
 ###21.01.2023###
 i did it i did it i did it i did it i did it i did it i fucking made debugging work lets gooooooooooooooooooo!!!!!!!!!!!!!!!!
+
+###31.01.2023###
+i added the hall effect sensors to the glove and the trainer is fully functional i think, so um, cool.
+just a note to remember to that i need to add [] to the data.json file at the end.

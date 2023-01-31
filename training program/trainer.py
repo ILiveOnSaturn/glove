@@ -23,22 +23,18 @@ session_data = []
 savefile_path = "data.json"
 gthread = None
 
+
 def save_data():
     global session_data
-    new_data = []  # TODO FIX THIS
+    new_data = [session_data[0]]
     print(session_data)
-    for i in session_data:
-        new_data.append(i[0]+[int(j) for j in i[1:].split(',')])
+    for i in session_data[1:]:
+        new_data.append([float(j) for j in i.split(',')])
     print(new_data)
     session_data = []
-    try:
-        file = open(savefile_path, 'w+')
-        data = json.load(file)
-        data.append(new_data)
-    except FileNotFoundError:
-        file = open(savefile_path, 'x')
-        data = new_data
-    json.dump(data, file)
+    file = open(savefile_path, 'a')
+    file.write(json.dumps(new_data)+', ')
+    file.close()
 
 
 def read_term_thread():
@@ -115,6 +111,7 @@ def train(train_type):
     global glove_data
     global received_letter
     global gthread
+    global session_data
     char_count = load_char_info()
     data = load_pangrams(train_type, sum(char_count[train_type].values()))
     ch = 0

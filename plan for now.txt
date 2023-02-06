@@ -43,3 +43,8 @@ just a note to remember to that i need to add [] to the data.json file at the en
 ###03.02.2023###
 i tried connecting the hall effect to the raspi 4b+, but i didnt get anything meaningful because of two things: 1. the 4b+ doesnt have adc pins and 2. apparantly current makes wires have magnetic field but its so small it shouldnt matter or something???
 anyways im gonna connect the hall effect directly to the pico (if it goes wrong ill cry) and im gonna see what will happen.
+
+###06.02.2023###
+i built the glove and its almost done, just need to add the pico in.
+i started making the imu handler and i need to test it once the glove is done. it is literally hell working with registers.
+

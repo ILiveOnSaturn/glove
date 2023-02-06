@@ -81,7 +81,7 @@ rule ASM_EXECUTABLE_LINKER__bs2_default_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "/media/linux programs/apps/CLion/ch-0/223.8214.51/bin/cmake/linux/bin/cmake" --regenerate-during-build -S"/media/shared drive/electronics/glove/onboard code/glove" -B"/media/shared drive/electronics/glove/onboard code/glove/cmake-build-debug"
+  command = "/media/linux programs/apps/CLion/ch-0/223.8617.54/bin/cmake/linux/x64/bin/cmake" --regenerate-during-build -S"/media/shared drive/electronics/glove/onboard code/glove" -B"/media/shared drive/electronics/glove/onboard code/glove/cmake-build-debug"
   description = Re-running CMake...
   generator = 1
 
@@ -90,7 +90,7 @@ rule RERUN_CMAKE
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = "/media/linux programs/apps/CLion/ch-0/223.8214.51/bin/ninja/linux/ninja" $FILE_ARG -t clean $TARGETS
+  command = "/media/linux programs/apps/CLion/ch-0/223.8617.54/bin/ninja/linux/x64/ninja" $FILE_ARG -t clean $TARGETS
   description = Cleaning all built files...
 
 
@@ -98,6 +98,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = "/media/linux programs/apps/CLion/ch-0/223.8214.51/bin/ninja/linux/ninja" -t targets
+  command = "/media/linux programs/apps/CLion/ch-0/223.8617.54/bin/ninja/linux/x64/ninja" -t targets
   description = All primary targets available:
 

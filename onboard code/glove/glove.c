@@ -6,9 +6,6 @@
 
 int main()
 {
-#ifndef PICO_DEFAULT_LED_PIN
-#warning blink has no led
-#else
     tusb_init();
     stdio_init_all();
     const uint LED_PIN = PICO_DEFAULT_LED_PIN;
@@ -16,10 +13,8 @@ int main()
     gpio_set_dir(LED_PIN, GPIO_OUT);
     while (true) {
         tud_task();
-        gpio_put(LED_PIN, 1);
         printf("working\n");
     }
-#endif
 }
 
 void tud_mount_cb(void) {//invoked when device is mounted
@@ -52,5 +47,5 @@ void tud_hid_set_report_cb(uint8_t instance, uint8_t report_id, hid_report_type_
     (void) instance;
     (void) report_id;
     (void) report_type;
-    tud_hid_report(0, buffer, bufsize);
+    tud_hid_report(0, buffer, bufsize);//echo back everything we get
 }

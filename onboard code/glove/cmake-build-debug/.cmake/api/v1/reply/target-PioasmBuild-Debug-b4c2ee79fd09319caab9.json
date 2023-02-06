@@ -12,7 +12,7 @@
 		],
 		"files" : 
 		[
-			"/media/linux programs/apps/CLion/ch-0/223.8214.51/bin/cmake/linux/share/cmake-3.24/Modules/ExternalProject.cmake",
+			"/media/linux programs/apps/CLion/ch-0/223.8617.54/bin/cmake/linux/x64/share/cmake-3.24/Modules/ExternalProject.cmake",
 			"/media/shared drive/electronics/pico git stuff/pico-sdk/tools/FindPioasm.cmake",
 			"/media/shared drive/electronics/pico git stuff/pico-sdk/tools/CMakeLists.txt",
 			"/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/cyw43_driver/CMakeLists.txt"

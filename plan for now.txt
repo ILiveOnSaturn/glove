@@ -39,3 +39,7 @@ i did it i did it i did it i did it i did it i did it i fucking made debugging w
 ###31.01.2023###
 i added the hall effect sensors to the glove and the trainer is fully functional i think, so um, cool.
 just a note to remember to that i need to add [] to the data.json file at the end.
+
+###03.02.2023###
+i tried connecting the hall effect to the raspi 4b+, but i didnt get anything meaningful because of two things: 1. the 4b+ doesnt have adc pins and 2. apparantly current makes wires have magnetic field but its so small it shouldnt matter or something???
+anyways im gonna connect the hall effect directly to the pico (if it goes wrong ill cry) and im gonna see what will happen.

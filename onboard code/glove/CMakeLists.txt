@@ -36,11 +36,13 @@ pico_enable_stdio_usb(glove 1)
 target_sources(glove PUBLIC
 		glove.c
 		usb_descriptors.c
+		imu_handler.c
 		)
 
 # Add the standard library to the build
 target_link_libraries(glove
         pico_stdlib
+		hardware_i2c
         tinyusb_device
 		tinyusb_board
 	)

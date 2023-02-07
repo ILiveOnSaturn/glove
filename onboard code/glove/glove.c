@@ -1,6 +1,7 @@
 #include "pico/stdlib.h"
 #include "tusb.h"
 #include "bsp/board.h"
+#include "imu_handler.h"
 
 #include "usb_descriptors.h"
 

@@ -46,7 +46,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 42,
+				"line" : 43,
 				"parent" : 0
 			},
 			{
@@ -67,7 +67,7 @@
 			{
 				"command" : 6,
 				"file" : 0,
-				"line" : 54,
+				"line" : 56,
 				"parent" : 0
 			},
 			{
@@ -131,7 +131,7 @@
 			{
 				"command" : 10,
 				"file" : 0,
-				"line" : 49,
+				"line" : 51,
 				"parent" : 0
 			},
 			{
@@ -538,6 +538,10 @@
 				{
 					"backtrace" : 2,
 					"path" : "/media/shared drive/electronics/pico git stuff/pico-sdk/src/common/pico_usb_reset_interface/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/hardware_i2c/include"
 				}
 			],
 			"language" : "C",
@@ -559,7 +563,7 @@
 				5,
 				6,
 				7,
-				9,
+				8,
 				10,
 				11,
 				12,
@@ -570,20 +574,20 @@
 				17,
 				18,
 				19,
-				21,
+				20,
 				22,
 				23,
 				24,
 				25,
 				26,
 				27,
-				29,
-				32,
+				28,
+				30,
 				33,
-				37,
+				34,
 				38,
-				40,
-				44,
+				39,
+				41,
 				45,
 				46,
 				47,
@@ -609,7 +613,9 @@
 				67,
 				68,
 				69,
-				70
+				70,
+				71,
+				72
 			]
 		},
 		{
@@ -1003,22 +1009,26 @@
 				{
 					"backtrace" : 2,
 					"path" : "/media/shared drive/electronics/pico git stuff/pico-sdk/src/common/pico_usb_reset_interface/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/hardware_i2c/include"
 				}
 			],
 			"language" : "ASM",
 			"sourceIndexes" : 
 			[
-				8,
-				20,
-				28,
-				30,
+				9,
+				21,
+				29,
 				31,
-				34,
+				32,
 				35,
 				36,
-				39,
-				41,
-				42
+				37,
+				40,
+				42,
+				43
 			]
 		},
 		{
@@ -1431,6 +1441,10 @@
 				{
 					"backtrace" : 2,
 					"path" : "/media/shared drive/electronics/pico git stuff/pico-sdk/src/common/pico_usb_reset_interface/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/hardware_i2c/include"
 				}
 			],
 			"language" : "CXX",
@@ -1444,7 +1458,7 @@
 			},
 			"sourceIndexes" : 
 			[
-				43
+				44
 			]
 		}
 	],
@@ -2316,7 +2330,7 @@
 				5,
 				6,
 				7,
-				9,
+				8,
 				10,
 				11,
 				12,
@@ -2327,20 +2341,20 @@
 				17,
 				18,
 				19,
-				21,
+				20,
 				22,
 				23,
 				24,
 				25,
 				26,
 				27,
-				29,
-				32,
+				28,
+				30,
 				33,
-				37,
+				34,
 				38,
-				40,
-				43,
+				39,
+				41,
 				44,
 				45,
 				46,
@@ -2367,24 +2381,26 @@
 				67,
 				68,
 				69,
-				70
+				70,
+				71,
+				72
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				8,
-				20,
-				28,
-				30,
+				9,
+				21,
+				29,
 				31,
-				34,
+				32,
 				35,
 				36,
-				39,
-				41,
-				42
+				37,
+				40,
+				42,
+				43
 			]
 		}
 	],
@@ -2400,6 +2416,12 @@
 			"backtrace" : 18,
 			"compileGroupIndex" : 0,
 			"path" : "usb_descriptors.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 18,
+			"compileGroupIndex" : 0,
+			"path" : "imu_handler.c",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -2808,6 +2830,12 @@
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,
 			"path" : "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/hardware_flash/flash.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c",
 			"sourceGroupIndex" : 0
 		},
 		{

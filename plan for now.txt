@@ -48,3 +48,6 @@ anyways im gonna connect the hall effect directly to the pico (if it goes wrong 
 i built the glove and its almost done, just need to add the pico in.
 i started making the imu handler and i need to test it once the glove is done. it is literally hell working with registers.
 
+###07.02.2023###
+finished with the imu library, need to test it out.
+need to write code for the serial com for the trainer.

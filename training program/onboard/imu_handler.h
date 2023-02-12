@@ -2,8 +2,8 @@
 #define I2C_PIN i2c0
 #define L3GD20_ADDRESS 0x6B
 #define LSM303D_ADDRESS 0x19
-#define SCL_PIN 4
-#define SDA_PIN 5
+#define SCL_PIN 17
+#define SDA_PIN 16
 
 void imu_init();
 

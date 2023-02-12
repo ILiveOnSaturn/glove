@@ -44,7 +44,8 @@ target_link_libraries(glove
         pico_stdlib
 		hardware_i2c
         tinyusb_device
-		tinyusb_board
+		pico_bootsel_via_double_reset
+		pico_bootrom
 	)
 
 # Add the standard include files to the build

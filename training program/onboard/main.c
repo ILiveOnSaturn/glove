@@ -1,29 +1,25 @@
-#include <signal.h>
+#include <stdio.h>
 #include "pico/stdlib.h"
 #include "imu_handler.h"
 #include "hardware/adc.h"
 
-#define BUTTON_PIN 16
-
-void sigint_handler(int signum) {
-    printf("<->");
-    exit(0);
-}
-
+#define BUTTON_PIN 13
 
 int main() {
-    stdio_init_all();
-    adc_init();
-    imu_init();
-    
     gpio_init(BUTTON_PIN);
     gpio_set_dir(BUTTON_PIN, GPIO_IN);
     gpio_pull_up(BUTTON_PIN);
+    if (!gpio_get(BUTTON_PIN)) {
+        reset_usb_boot(0, 0);
+    }
+
+    stdio_init_all();
+    adc_init();
+    imu_init();
 
     adc_gpio_init(26);
     adc_select_input(0);
-    
-    signal(SIGINT, sigint_handler);
+
     double accel[3];
     double gyro[3];
     uint finger;

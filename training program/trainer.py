@@ -88,6 +88,12 @@ def load_char_info():
         return json_data
 
 
+def save_char_info(info):
+    file = open("count.json", 'w')
+    json.dump(info, file)
+    file.close()
+
+
 def load_pangrams(types, skip, loop=250):
     if types == "other":
         special_char = list(SPECIAL_CHARS)
@@ -139,7 +145,6 @@ def train(train_type):
                     return
 
         if received_letter:
-            #print(sentence[ch])
             session_data = [sentence[ch]]+glove_data
             print("saving")
             save_data()
@@ -147,6 +152,7 @@ def train(train_type):
                 char_count["other"][sentence[ch]] += 1
             else:
                 char_count[train_type][sentence[ch]] += 1
+            save_char_info(char_count)
             ch += 1
             received_letter = False
             if ch > len(sentence) - 1:

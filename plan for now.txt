@@ -51,3 +51,7 @@ i started making the imu handler and i need to test it once the glove is done. i
 ###07.02.2023###
 finished with the imu library, need to test it out.
 need to write code for the serial com for the trainer.
+
+###13.02.2023###
+finished building the glove, but its still shit (the wire broke ;( )
+i found this goldmine https://github.com/tensorflow/tflite-micro/blob/main/tensorflow/lite/micro/docs/new_platform_support.md

@@ -244,29 +244,29 @@ glove.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/glove.c.s
 .PHONY : glove.c.s
 
-media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
-.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.obj
+imu_handler.obj: imu_handler.c.obj
+.PHONY : imu_handler.obj
 
 # target to build an object file
-media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
-.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+imu_handler.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/imu_handler.c.obj
+.PHONY : imu_handler.c.obj
 
-media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i
-.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.i
+imu_handler.i: imu_handler.c.i
+.PHONY : imu_handler.i
 
 # target to preprocess a source file
-media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i
-.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i
+imu_handler.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/imu_handler.c.i
+.PHONY : imu_handler.c.i
 
-media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
-.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.s
+imu_handler.s: imu_handler.c.s
+.PHONY : imu_handler.s
 
 # target to generate assembly for a file
-media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
-.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
+imu_handler.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/imu_handler.c.s
+.PHONY : imu_handler.c.s
 
 media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
@@ -1020,6 +1020,30 @@ media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_g
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj
+
+# target to build an object file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.i
+
+# target to preprocess a source file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.s
+
+# target to generate assembly for a file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+
 media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_irq/irq.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_irq/irq.obj
 
@@ -1251,6 +1275,30 @@ media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootr
 media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.obj
+
+# target to build an object file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.i: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.i
+
+# target to preprocess a source file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.i
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.i
+
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.s: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.s
+
+# target to generate assembly for a file
+media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glove.dir/build.make CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.s
+.PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.s
 
 media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_divider/divider.obj: media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 .PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_divider/divider.obj
@@ -1767,9 +1815,9 @@ help:
 	@echo "... glove.obj"
 	@echo "... glove.i"
 	@echo "... glove.s"
-	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.obj"
-	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.i"
-	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.s"
+	@echo "... imu_handler.obj"
+	@echo "... imu_handler.i"
+	@echo "... imu_handler.s"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"
@@ -1864,6 +1912,9 @@ help:
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_gpio/gpio.i"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_gpio/gpio.s"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.i"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.s"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_irq/irq.obj"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_irq/irq.i"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_irq/irq.s"
@@ -1893,6 +1944,9 @@ help:
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.obj"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.i"
+	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.s"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_divider/divider.obj"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj"

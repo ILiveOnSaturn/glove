@@ -105,116 +105,6 @@ CMakeFiles/glove.dir/glove.c.obj: /media/shared\ drive/electronics/glove/onboard
   /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/hw/bsp/ansi_escape.h \
   /media/shared\ drive/electronics/glove/onboard\ code/glove/usb_descriptors.h
 
-CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj: /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_base/include/pico.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_base/include/pico/types.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_base/include/pico/assert.h \
-  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h \
-  /usr/arm-none-eabi/include/assert.h \
-  /usr/arm-none-eabi/include/_ansi.h \
-  /usr/arm-none-eabi/include/newlib.h \
-  /usr/arm-none-eabi/include/_newlib_version.h \
-  /usr/arm-none-eabi/include/sys/config.h \
-  /usr/arm-none-eabi/include/machine/ieeefp.h \
-  /usr/arm-none-eabi/include/sys/features.h \
-  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdint.h \
-  /usr/arm-none-eabi/include/stdint.h \
-  /usr/arm-none-eabi/include/machine/_default_types.h \
-  /usr/arm-none-eabi/include/sys/_intsup.h \
-  /usr/arm-none-eabi/include/sys/_stdint.h \
-  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h \
-  generated/pico_base/pico/version.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_base/include/pico/config.h \
-  generated/pico_base/pico/config_autogen.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/boards/include/boards/pico.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
-  /usr/arm-none-eabi/include/sys/cdefs.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_base/include/pico/types.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_base/include/pico/error.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_time/include/pico/time.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/ioqspi.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_qspi.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/hw/bsp/board.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/hw/bsp/ansi_escape.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/tusb.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_common.h \
-  /usr/arm-none-eabi/include/string.h \
-  /usr/arm-none-eabi/include/sys/reent.h \
-  /usr/arm-none-eabi/include/_ansi.h \
-  /usr/arm-none-eabi/include/sys/_types.h \
-  /usr/arm-none-eabi/include/machine/_types.h \
-  /usr/arm-none-eabi/include/sys/lock.h \
-  /usr/arm-none-eabi/include/sys/_locale.h \
-  /usr/arm-none-eabi/include/strings.h \
-  /usr/arm-none-eabi/include/sys/string.h \
-  /usr/arm-none-eabi/include/stdio.h \
-  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdarg.h \
-  /usr/arm-none-eabi/include/sys/types.h \
-  /usr/arm-none-eabi/include/machine/endian.h \
-  /usr/arm-none-eabi/include/machine/_endian.h \
-  /usr/arm-none-eabi/include/sys/select.h \
-  /usr/arm-none-eabi/include/sys/_sigset.h \
-  /usr/arm-none-eabi/include/sys/_timeval.h \
-  /usr/arm-none-eabi/include/sys/timespec.h \
-  /usr/arm-none-eabi/include/sys/_timespec.h \
-  /usr/arm-none-eabi/include/sys/_pthreadtypes.h \
-  /usr/arm-none-eabi/include/sys/sched.h \
-  /usr/arm-none-eabi/include/machine/types.h \
-  /usr/arm-none-eabi/include/sys/stdio.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/tusb_option.h \
-  /media/shared\ drive/electronics/glove/onboard\ code/glove/tusb_config.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_compiler.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_verify.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_types.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_error.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_timeout.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/osal/osal.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_common.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/osal/osal_pico.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_sync/include/pico/sem.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_sync/include/pico/mutex.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_sync/include/pico/critical_section.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_fifo.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/osal/osal.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_fifo.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/device/usbd.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/class/hid/hid_device.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/class/hid/hid.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc.h \
-  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/board.h
-
 CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c \
   /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/tusb_option.h \
   /media/shared\ drive/electronics/glove/onboard\ code/glove/tusb_config.h
@@ -1500,6 +1390,53 @@ CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/
   /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
   /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h
 
+CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_base/include/pico.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_base/include/pico/types.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_base/include/pico/assert.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h \
+  /usr/arm-none-eabi/include/assert.h \
+  /usr/arm-none-eabi/include/_ansi.h \
+  /usr/arm-none-eabi/include/newlib.h \
+  /usr/arm-none-eabi/include/_newlib_version.h \
+  /usr/arm-none-eabi/include/sys/config.h \
+  /usr/arm-none-eabi/include/machine/ieeefp.h \
+  /usr/arm-none-eabi/include/sys/features.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdint.h \
+  /usr/arm-none-eabi/include/stdint.h \
+  /usr/arm-none-eabi/include/machine/_default_types.h \
+  /usr/arm-none-eabi/include/sys/_intsup.h \
+  /usr/arm-none-eabi/include/sys/_stdint.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h \
+  generated/pico_base/pico/version.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_base/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/boards/include/boards/pico.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /usr/arm-none-eabi/include/sys/cdefs.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_base/include/pico/types.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_base/include/pico/error.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_time/include/pico/time.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h \
+  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_time/include/pico/timeout_helper.h
+
 CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_irq/irq.c \
   /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
   /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_base/include/pico.h \
@@ -2776,6 +2713,8 @@ CMakeFiles/glove.dir/usb_descriptors.c.obj: /media/shared\ drive/electronics/glo
 
 /usr/arm-none-eabi/include/c++/12.2.0/pstl/pstl_config.h:
 
+/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h:
+
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/pico_printf/include/pico/printf.h:
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sysinfo.h:
@@ -2804,6 +2743,10 @@ CMakeFiles/glove.dir/usb_descriptors.c.obj: /media/shared\ drive/electronics/glo
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/vreg_and_chip_reset.h:
 
+/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h:
+
+/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_vreg/include/hardware/vreg.h:
+
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/pico_platform/platform.c:
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_vreg/vreg.c:
@@ -2818,6 +2761,14 @@ CMakeFiles/glove.dir/usb_descriptors.c.obj: /media/shared\ drive/electronics/glo
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/scb.h:
 
+/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h:
+
+/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h:
+
+/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/boot_stage2/include/boot_stage2/config.h:
+
+/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/ioqspi.h:
+
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c:
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c:
@@ -2828,9 +2779,15 @@ CMakeFiles/glove.dir/usb_descriptors.c.obj: /media/shared\ drive/electronics/glo
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_flash/include/hardware/flash.h:
 
+/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h:
+
+/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/xosc.h:
+
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_xosc/include/hardware/xosc.h:
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c:
+
+/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c:
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_pll/include/hardware/pll.h:
 
@@ -2886,24 +2843,6 @@ CMakeFiles/glove.dir/usb_descriptors.c.obj: /media/shared\ drive/electronics/glo
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/tusb.c:
 
-/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/pico_float/float_math.c:
-
-/usr/arm-none-eabi/include/alloca.h:
-
-/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c:
-
-/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c:
-
-/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_claim/claim.c:
-
-/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_util/queue.c:
-
-/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h:
-
-/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h:
-
-/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h:
-
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/pico_double/double_math.c:
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_sync/mutex.c:
@@ -2937,8 +2876,6 @@ CMakeFiles/glove.dir/usb_descriptors.c.obj: /media/shared\ drive/electronics/glo
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp:
 
 /usr/arm-none-eabi/include/sys/_timespec.h:
-
-/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c:
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h:
 
@@ -2998,10 +2935,6 @@ CMakeFiles/glove.dir/usb_descriptors.c.obj: /media/shared\ drive/electronics/glo
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/boards/include/boards/pico.h:
 
-/usr/arm-none-eabi/include/machine/stdlib.h:
-
-/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_fifo.h:
-
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c:
 
 /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h:
@@ -3015,6 +2948,8 @@ CMakeFiles/glove.dir/usb_descriptors.c.obj: /media/shared\ drive/electronics/glo
 /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdint.h:
 
 /usr/arm-none-eabi/include/sys/select.h:
+
+/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h:
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_verify.h:
 
@@ -3048,8 +2983,6 @@ generated/pico_base/pico/version.h:
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/pico_printf/printf.c:
 
-/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/board.h:
-
 /usr/arm-none-eabi/include/machine/types.h:
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_base/include/pico/config.h:
@@ -3057,10 +2990,6 @@ generated/pico_base/pico/version.h:
 /usr/lib/gcc/arm-none-eabi/12.2.0/include-fixed/syslimits.h:
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_sync/include/pico/sem.h:
-
-/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_vreg/include/hardware/vreg.h:
-
-/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h:
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h:
 
@@ -3116,17 +3045,15 @@ generated/pico_base/pico/config_autogen.h:
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/device/usbd_pvt.h:
 
-/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_clocks/clocks.c:
-
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h:
+
+/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_clocks/clocks.c:
 
 /usr/arm-none-eabi/include/sys/timespec.h:
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/ssi.h:
 
 /usr/arm-none-eabi/include/sys/_pthreadtypes.h:
-
-/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h:
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_time/timeout_helper.c:
 
@@ -3158,6 +3085,8 @@ generated/pico_base/pico/config_autogen.h:
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_sync/include/pico/lock_core.h:
 
+/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c:
+
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h:
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_qspi.h:
@@ -3186,6 +3115,10 @@ generated/pico_base/pico/config_autogen.h:
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/hw/bsp/ansi_escape.h:
 
+/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_fifo.h:
+
+/usr/arm-none-eabi/include/machine/stdlib.h:
+
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h:
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_common.h:
@@ -3194,23 +3127,11 @@ generated/pico_base/pico/config_autogen.h:
 
 /media/shared\ drive/electronics/glove/onboard\ code/glove/usb_descriptors.h:
 
-/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/boot_stage2/include/boot_stage2/config.h:
-
-/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/ioqspi.h:
-
-/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/xosc.h:
-
-/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h:
-
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c:
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c:
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:
-
-/usr/arm-none-eabi/include/stdlib.h:
-
-/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/device/usbd.c:
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/device/dcd_attr.h:
 
@@ -3223,3 +3144,23 @@ generated/pico_base/pico/config_autogen.h:
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:
 
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/usb.h:
+
+/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h:
+
+/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h:
+
+/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c:
+
+/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_claim/claim.c:
+
+/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_util/queue.c:
+
+/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h:
+
+/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/device/usbd.c:
+
+/usr/arm-none-eabi/include/stdlib.h:
+
+/media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/pico_float/float_math.c:
+
+/usr/arm-none-eabi/include/alloca.h:

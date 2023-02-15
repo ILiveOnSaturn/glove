@@ -29,6 +29,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
   "CFG_TUSB_OS=OPT_OS_PICO"
   "LIB_PICO_BIT_OPS=1"
   "LIB_PICO_BIT_OPS_PICO=1"
+  "LIB_PICO_BOOTSEL_VIA_DOUBLE_RESET=1"
   "LIB_PICO_DIVIDER=1"
   "LIB_PICO_DIVIDER_HARDWARE=1"
   "LIB_PICO_DOUBLE=1"
@@ -57,7 +58,6 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
   "LIB_PICO_TIME=1"
   "LIB_PICO_UNIQUE_ID=1"
   "LIB_PICO_UTIL=1"
-  "LIB_TINYUSB_BOARD=1"
   "LIB_TINYUSB_DEVICE=1"
   "PICO_BOARD=\"pico\""
   "PICO_BUILD=1"
@@ -121,12 +121,13 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/pico_unique_id/include"
   "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/hardware_flash/include"
   "/media/shared drive/electronics/pico git stuff/pico-sdk/src/common/pico_usb_reset_interface/include"
+  "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/hardware_i2c/include"
   )
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/media/shared drive/electronics/glove/onboard code/glove/glove.c" "CMakeFiles/glove.dir/glove.c.obj" "gcc" "CMakeFiles/glove.dir/glove.c.obj.d"
-  "/media/shared drive/electronics/pico git stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj" "gcc" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj.d"
+  "/media/shared drive/electronics/glove/onboard code/glove/imu_handler.c" "CMakeFiles/glove.dir/imu_handler.c.obj" "gcc" "CMakeFiles/glove.dir/imu_handler.c.obj.d"
   "/media/shared drive/electronics/pico git stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj" "gcc" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj.d"
   "/media/shared drive/electronics/pico git stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj" "gcc" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj.d"
   "/media/shared drive/electronics/pico git stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj" "gcc" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj.d"
@@ -158,6 +159,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/hardware_clocks/clocks.c" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj" "gcc" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj.d"
   "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/hardware_flash/flash.c" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj" "gcc" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj.d"
   "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/hardware_gpio/gpio.c" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" "gcc" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj.d"
+  "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj" "gcc" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj.d"
   "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/hardware_irq/irq.c" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj" "gcc" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj.d"
   "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/hardware_pll/pll.c" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj" "gcc" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj.d"
   "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/hardware_sync/sync.c" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj" "gcc" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj.d"
@@ -167,6 +169,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj" "gcc" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj.d"
   "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/hardware_xosc/xosc.c" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj" "gcc" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj.d"
   "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj" "gcc" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj.d"
+  "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj" "gcc" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj.d"
   "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/pico_double/double_init_rom.c" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj" "gcc" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj.d"
   "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/pico_double/double_math.c" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_double/double_math.c.obj" "gcc" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_double/double_math.c.obj.d"
   "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj" "gcc" "CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj.d"

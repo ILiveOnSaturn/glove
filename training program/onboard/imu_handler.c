@@ -13,7 +13,7 @@ void imu_init() {
 }
 
 
-//using the docs from https://www.pololu.com/file/0J563/L3GD20.pdf and https://www.pololu.com/file/0J703/LSM303D.pdf
+//using the docs from https://www.pololu.com/file/0J563/L3GD20.pdf and https://cdn-shop.adafruit.com/datasheets/LSM303DLHC.PDF
 void reset_imu() {
     uint8_t ctrl_reg1_g[] = {0x20, 0x0F};
     uint8_t ctrl_reg4_g[] = {0x23, 0x00};

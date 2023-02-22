@@ -17,13 +17,13 @@ void imu_init() {
 void reset_imu() {
     uint8_t ctrl_reg1_g[] = {0x20, 0x0F};
     uint8_t ctrl_reg4_g[] = {0x23, 0x00};
-    uint8_t ctrl_reg1_a[] = {0x20, 0x67};
-    uint8_t ctrl_reg2_a[] = {0x21, 0x08};
+    uint8_t ctrl_reg1_a[] = {0x20, 0x57};
+    uint8_t ctrl_reg4_a[] = {0x23, 0x18};
     //uint8_t ctrl_reg5_a[] = {0x24, 0x0A};
     i2c_write_blocking(I2C_PIN, L3GD20_ADDRESS, ctrl_reg1_g, 2, false);
     i2c_write_blocking(I2C_PIN, L3GD20_ADDRESS, ctrl_reg4_g, 2, false);
     i2c_write_blocking(I2C_PIN, LSM303D_ADDRESS, ctrl_reg1_a, 2, false);
-    i2c_write_blocking(I2C_PIN, LSM303D_ADDRESS, ctrl_reg2_a, 2, false);
+    i2c_write_blocking(I2C_PIN, LSM303D_ADDRESS, ctrl_reg4_a, 2, false);
     //i2c_write_blocking(I2C_PIN, LSM303D_ADDRESS, ctrl_reg5_a, 2, false);
 }
 
@@ -38,7 +38,7 @@ void read_imu_raw(int16_t accel[3], int16_t gyro[3]){
         gyro[i] = (buffer[(i*2)+1] << 8 | buffer[i*2]);
     }
 
-    out_addr = 0x28;
+    out_addr = 0xA8;
     i2c_write_blocking(I2C_PIN, LSM303D_ADDRESS, &out_addr, 1, true);
     i2c_read_blocking(I2C_PIN, LSM303D_ADDRESS, buffer, 6, false);
 

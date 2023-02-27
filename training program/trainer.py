@@ -94,6 +94,15 @@ def save_char_info(info):
     file.close()
 
 
+def delete_last_entry():
+    file = open(savefile_path, 'r')
+    data = file.read()
+    file.close()
+    file = open(savefile_path, 'w')
+    file.write(data[:data.rfind("\"")-3])
+    file.close()
+
+
 def load_pangrams(types, skip, loop=250):
     if types == "other":
         special_char = list(SPECIAL_CHARS)
@@ -143,6 +152,13 @@ def train(train_type):
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_ESCAPE:
                     return
+                if event.key == pygame.K_BACKSPACE:
+                    ch -= 1
+                    if (train_type != "other") and (sentence[ch] in SPECIAL_CHARS):
+                        char_count["other"][sentence[ch]] -= 1
+                    else:
+                        char_count[train_type][sentence[ch]] -= 1
+                    delete_last_entry()
 
         if received_letter:
             session_data = [sentence[ch]]+glove_data

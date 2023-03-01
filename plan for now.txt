@@ -55,3 +55,6 @@ need to write code for the serial com for the trainer.
 ###13.02.2023###
 finished building the glove, but its still shit (the wire broke ;( )
 i found this goldmine https://github.com/tensorflow/tflite-micro/blob/main/tensorflow/lite/micro/docs/new_platform_support.md
+
+##01.03.2023###
+the glove is built, i have a dataset and all, but the measuring takes a lot of time apparantly. i tried changing it from 100ms to 50ms and it changed from being an average of 4 per letter to an average of 6 per letter. i may need to remove delay if the results are not accurate enough.

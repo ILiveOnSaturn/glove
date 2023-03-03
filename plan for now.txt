@@ -56,5 +56,10 @@ need to write code for the serial com for the trainer.
 finished building the glove, but its still shit (the wire broke ;( )
 i found this goldmine https://github.com/tensorflow/tflite-micro/blob/main/tensorflow/lite/micro/docs/new_platform_support.md
 
-##01.03.2023###
+###01.03.2023###
 the glove is built, i have a dataset and all, but the measuring takes a lot of time apparantly. i tried changing it from 100ms to 50ms and it changed from being an average of 4 per letter to an average of 6 per letter. i may need to remove delay if the results are not accurate enough.
+
+###04.03.2023###
+i changed the gru for lstm because gru is a bit finicky when it comes to tflite.
+i converted the thing into tflite (finally) and therefore into tflmicro. now i just need to test if it runs on the pico.
+the model is really big (88776b) and im not even talking about the model file which is like half a megabyte. i need to look into quantization and after that i need to see if i can make my model smaller without hurting accuracy. maybe amp back the delay but i dont want to do that because i already have 7000 examples in the dataset so that is a last resort.

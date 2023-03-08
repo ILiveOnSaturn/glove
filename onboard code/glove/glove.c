@@ -1,25 +1,26 @@
 #include "pico/stdlib.h"
 #include "tusb.h"
-#include "bsp/board.h"
+#include "pico/bootrom.h"
 #include "imu_handler.h"
-
-#include "usb_descriptors.h"
 
 #define BUTTON_PIN 13
 
 int main()
 {
+    stdio_init_all();
     gpio_init(BUTTON_PIN);
     gpio_set_dir(BUTTON_PIN, GPIO_IN);
     gpio_pull_up(BUTTON_PIN);
     if (!gpio_get(BUTTON_PIN)) {
         reset_usb_boot(0, 0);
     }
+
+    imu_init();
     tusb_init();
-    stdio_init_all();
-    const uint LED_PIN = PICO_DEFAULT_LED_PIN;
-    gpio_init(LED_PIN);
-    gpio_set_dir(LED_PIN, GPIO_OUT);
+
+    double accel[3];
+    double gyro[3];
+
     while (true) {
         tud_task();
         printf("working\n");

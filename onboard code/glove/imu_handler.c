@@ -47,12 +47,12 @@ void read_imu_raw(int16_t accel[3], int16_t gyro[3]){
     }
 }
 
-void read_imu(double accel[3], double gyro[3]) {
+void read_imu(float gyro[3], float accel[3]) {
     int16_t accel_raw[3];
     int16_t gyro_raw[3];
     read_imu_raw(accel_raw, gyro_raw);
     for (int i=0; i<3; i++) {
-        gyro[i] = gyro_raw[i]*0.00875;
-        accel[i] = (accel_raw[i]/32767.0)*4; //maybe?? https://github.com/pimoroni/lsm303d-python/blob/master/library/lsm303d/__init__.py
+        gyro[i] = gyro_raw[i]*(float)0.00875;
+        accel[i] = (accel_raw[i]/(float)32767)*4; //maybe?? https://github.com/pimoroni/lsm303d-python/blob/master/library/lsm303d/__init__.py
     }
 }

@@ -2,6 +2,7 @@
 #include "tusb.h"
 #include "pico/bootrom.h"
 #include "imu_handler.h"
+#include "nn_functions.h"
 
 #define BUTTON_PIN 13
 
@@ -17,13 +18,30 @@ int main()
 
     imu_init();
     tusb_init();
+    setup_nn();
 
-    double accel[3];
-    double gyro[3];
-
+    float buffer[11][6];
+    int cnt;
+    float output;
     while (true) {
         tud_task();
-        printf("working\n");
+        if (!gpio_get(BUTTON_PIN)) {
+            cnt = 0;
+            while (!gpio_get(BUTTON_PIN) && cnt < 11) {
+                read_imu(buffer[cnt], buffer[cnt]+3);
+                ++cnt;
+            }
+            if (cnt == 11) {
+                continue;
+            }
+            output = get_output(buffer);
+            printf("output: %f", output);
+            for (int i=0; i<11; ++i) {
+                for (int j = 0; j < 6; ++j) {
+                    buffer[i][j] = 0;
+                }
+            }
+        }
     }
 }
 

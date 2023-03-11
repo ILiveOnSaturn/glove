@@ -21,6 +21,8 @@ target_sources(glove PUBLIC
 		glove.c
 		usb_descriptors.c
 		imu_handler.c
+		nn_functions.cc
+		model.cc
 		)
 
 # Add the standard library to the build

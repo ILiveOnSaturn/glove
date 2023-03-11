@@ -9,4 +9,4 @@ void imu_init();
 
 void reset_imu();
 void read_imu_raw(int16_t accel[3], int16_t gyro[3]);
-void read_imu(double accel[3], double gyro[3]);
+void read_imu(float gyro[3], float accel[3]);

@@ -5,8 +5,7 @@
 #include "tensorflow/lite/schema/schema_generated.h"
 #include "model.h"
 #include "nn_functions.h"
-
-#define MAX_TIMESTAMPS 11
+#include "constants.h"
 
 namespace {
     const tflite::Model* model = nullptr;
@@ -42,7 +41,7 @@ void setup_nn() {
 
     input = interpreter->input(0);
     if ((input->dims->size != 3) || (input->dims->data[0] != 1) ||
-        (input->dims->data[1] != MAX_TIMESTAMPS) || (input->type != kTfLiteFloat32)) {
+        (input->dims->data[1] != max_timestamp) || (input->type != kTfLiteFloat32)) {
         printf("Bad input tensor parameters in model");
         return;
     }

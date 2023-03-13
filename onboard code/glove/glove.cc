@@ -3,6 +3,7 @@
 #include "pico/bootrom.h"
 #include "imu_handler.h"
 #include "nn_functions.h"
+#include "constants.h"
 
 #define BUTTON_PIN 13
 
@@ -22,28 +23,37 @@ int main()
     tusb_init();
     setup_nn();
 
-    float buffer[11*6] = {0};
+    float buffer[max_timestamp*6] = {0};
     int cnt;
     float* output;
     while (true) {
         tud_task();
         if (!gpio_get(BUTTON_PIN)) {
             cnt = 0;
-            while (!gpio_get(BUTTON_PIN) && cnt < 11) {
+            while (!gpio_get(BUTTON_PIN) && cnt < max_timstamp) {
                 read_imu(buffer+cnt*6, buffer+cnt*6+3);
                 ++cnt;
                 sleep_ms(100);
             }
-            if (cnt == 11) {
+            if (cnt == max_timestamp) {
                 continue;
             }
+            if (cnt == 1) {
+                //TODO backspace
+            }
+            
             output = get_nn_output(buffer);
             printf("output:\n");
+            int max_n = 0;
             for (int i=0; i<28; ++i) {
+                if (output[max_n] < output[i]) {
+                    max_n = i;
+                }
                 printf("%f\n", output[i]);
             }
-            printf("size: %d\n", cnt);
-            for (int i=0; i<11*6; ++i) {
+            printf("in char: %c\n", shabtai_abc_mastertable[max_n]);
+            printf("size: %d\n", cnt);2
+            for (int i=0; i<max_timestamp*6; ++i) {
                 buffer[i] = 0;
             }
         }

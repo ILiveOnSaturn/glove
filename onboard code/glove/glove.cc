@@ -30,7 +30,7 @@ int main()
         tud_task();
         if (!gpio_get(BUTTON_PIN)) {
             cnt = 0;
-            while (!gpio_get(BUTTON_PIN) && cnt < max_timstamp) {
+            while (!gpio_get(BUTTON_PIN) && cnt < max_timestamp) {
                 read_imu(buffer+cnt*6, buffer+cnt*6+3);
                 ++cnt;
                 sleep_ms(100);
@@ -42,7 +42,7 @@ int main()
                 //TODO backspace
             }
             
-            output = get_nn_output(buffer);
+            output = get_nn_output(buffer, max_timestamp*6);
             printf("output:\n");
             int max_n = 0;
             for (int i=0; i<28; ++i) {
@@ -52,7 +52,7 @@ int main()
                 printf("%f\n", output[i]);
             }
             printf("in char: %c\n", shabtai_abc_mastertable[max_n]);
-            printf("size: %d\n", cnt);2
+            printf("size: %d\n", cnt);
             for (int i=0; i<max_timestamp*6; ++i) {
                 buffer[i] = 0;
             }

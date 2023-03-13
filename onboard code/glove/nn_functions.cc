@@ -47,13 +47,16 @@ void setup_nn() {
     }
 }
 
-float* get_nn_output(float* imu_input) {
-    input->data.f = imu_input;
+float* get_nn_output(float* imu_input, int size) {
+    for (int i=0; i<size; i++) {
+        input->data.f[i] = imu_input[i];
+    }
 
     TfLiteStatus invoke_status = interpreter->Invoke();
     if (invoke_status != kTfLiteOk) {
         printf("Invoke failed");
         return nullptr;
     }
-    return interpreter->output(0)->data.f;
+    output = interpreter->output(0);
+    return output->data.f;
 }

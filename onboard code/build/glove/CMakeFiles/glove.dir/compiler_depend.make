@@ -32391,7 +32391,8 @@ glove/CMakeFiles/glove.dir/glove.cc.obj: /media/shared\ drive/electronics/glove/
   /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h \
   /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h \
   /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h \
-  /media/shared\ drive/electronics/glove/onboard\ code/glove/nn_functions.h
+  /media/shared\ drive/electronics/glove/onboard\ code/glove/nn_functions.h \
+  /media/shared\ drive/electronics/glove/onboard\ code/glove/constants.h
 
 glove/CMakeFiles/glove.dir/imu_handler.c.obj: /media/shared\ drive/electronics/glove/onboard\ code/glove/imu_handler.c \
   /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h \
@@ -35042,7 +35043,8 @@ glove/CMakeFiles/glove.dir/nn_functions.cc.obj: /media/shared\ drive/electronics
   /media/shared\ drive/electronics/glove/onboard\ code/src/tensorflow/lite/micro/micro_profiler_interface.h \
   /media/shared\ drive/electronics/glove/onboard\ code/src/tensorflow/lite/portable_type_to_tflitetype.h \
   /media/shared\ drive/electronics/glove/onboard\ code/glove/model.h \
-  /media/shared\ drive/electronics/glove/onboard\ code/glove/nn_functions.h
+  /media/shared\ drive/electronics/glove/onboard\ code/glove/nn_functions.h \
+  /media/shared\ drive/electronics/glove/onboard\ code/glove/constants.h
 
 glove/CMakeFiles/glove.dir/usb_descriptors.c.obj: /media/shared\ drive/electronics/glove/onboard\ code/glove/usb_descriptors.c \
   /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/tusb.h \
@@ -36530,6 +36532,8 @@ generated/pico_base/pico/config_autogen.h:
 /usr/arm-none-eabi/include/c++/12.2.0/bits/stl_set.h:
 
 /media/shared\ drive/electronics/glove/onboard\ code/src/tensorflow/lite/micro/micro_log.cc:
+
+/media/shared\ drive/electronics/glove/onboard\ code/glove/constants.h:
 
 /usr/arm-none-eabi/include/c++/12.2.0/tr1/hypergeometric.tcc:
 

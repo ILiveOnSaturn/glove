@@ -7,7 +7,7 @@ extern "C" {
 
 void setup_nn();
 
-float* get_nn_output(float* imu_input);
+float* get_nn_output(float* imu_input, int size);
 
 #ifdef __cplusplus
 }

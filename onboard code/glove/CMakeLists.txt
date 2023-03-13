@@ -38,6 +38,7 @@ target_sources(glove PUBLIC
 		${CMAKE_CURRENT_LIST_DIR}/nn_functions.h
 		${CMAKE_CURRENT_LIST_DIR}/tusb_config.h
 		${CMAKE_CURRENT_LIST_DIR}/usb_descriptors.h
+        ${CMAKE_CURRENT_LIST_DIR}/constants.h
 		)
 
 # Add the standard library to the build

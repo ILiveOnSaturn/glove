@@ -4944,29 +4944,29 @@ __/src/third_party/kissfft/tools/kiss_fftr.c.s:
 	cd "/media/shared drive/electronics/glove/onboard code/build" && $(MAKE) $(MAKESILENT) -f glove/CMakeFiles/glove.dir/build.make glove/CMakeFiles/glove.dir/__/src/third_party/kissfft/tools/kiss_fftr.c.s
 .PHONY : __/src/third_party/kissfft/tools/kiss_fftr.c.s
 
-glove.obj: glove.c.obj
+glove.obj: glove.cc.obj
 .PHONY : glove.obj
 
 # target to build an object file
-glove.c.obj:
-	cd "/media/shared drive/electronics/glove/onboard code/build" && $(MAKE) $(MAKESILENT) -f glove/CMakeFiles/glove.dir/build.make glove/CMakeFiles/glove.dir/glove.c.obj
-.PHONY : glove.c.obj
+glove.cc.obj:
+	cd "/media/shared drive/electronics/glove/onboard code/build" && $(MAKE) $(MAKESILENT) -f glove/CMakeFiles/glove.dir/build.make glove/CMakeFiles/glove.dir/glove.cc.obj
+.PHONY : glove.cc.obj
 
-glove.i: glove.c.i
+glove.i: glove.cc.i
 .PHONY : glove.i
 
 # target to preprocess a source file
-glove.c.i:
-	cd "/media/shared drive/electronics/glove/onboard code/build" && $(MAKE) $(MAKESILENT) -f glove/CMakeFiles/glove.dir/build.make glove/CMakeFiles/glove.dir/glove.c.i
-.PHONY : glove.c.i
+glove.cc.i:
+	cd "/media/shared drive/electronics/glove/onboard code/build" && $(MAKE) $(MAKESILENT) -f glove/CMakeFiles/glove.dir/build.make glove/CMakeFiles/glove.dir/glove.cc.i
+.PHONY : glove.cc.i
 
-glove.s: glove.c.s
+glove.s: glove.cc.s
 .PHONY : glove.s
 
 # target to generate assembly for a file
-glove.c.s:
-	cd "/media/shared drive/electronics/glove/onboard code/build" && $(MAKE) $(MAKESILENT) -f glove/CMakeFiles/glove.dir/build.make glove/CMakeFiles/glove.dir/glove.c.s
-.PHONY : glove.c.s
+glove.cc.s:
+	cd "/media/shared drive/electronics/glove/onboard code/build" && $(MAKE) $(MAKESILENT) -f glove/CMakeFiles/glove.dir/build.make glove/CMakeFiles/glove.dir/glove.cc.s
+.PHONY : glove.cc.s
 
 imu_handler.obj: imu_handler.c.obj
 .PHONY : imu_handler.obj
@@ -6472,6 +6472,54 @@ media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_uniqu
 	cd "/media/shared drive/electronics/glove/onboard code/build" && $(MAKE) $(MAKESILENT) -f glove/CMakeFiles/glove.dir/build.make glove/CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
+model.obj: model.cc.obj
+.PHONY : model.obj
+
+# target to build an object file
+model.cc.obj:
+	cd "/media/shared drive/electronics/glove/onboard code/build" && $(MAKE) $(MAKESILENT) -f glove/CMakeFiles/glove.dir/build.make glove/CMakeFiles/glove.dir/model.cc.obj
+.PHONY : model.cc.obj
+
+model.i: model.cc.i
+.PHONY : model.i
+
+# target to preprocess a source file
+model.cc.i:
+	cd "/media/shared drive/electronics/glove/onboard code/build" && $(MAKE) $(MAKESILENT) -f glove/CMakeFiles/glove.dir/build.make glove/CMakeFiles/glove.dir/model.cc.i
+.PHONY : model.cc.i
+
+model.s: model.cc.s
+.PHONY : model.s
+
+# target to generate assembly for a file
+model.cc.s:
+	cd "/media/shared drive/electronics/glove/onboard code/build" && $(MAKE) $(MAKESILENT) -f glove/CMakeFiles/glove.dir/build.make glove/CMakeFiles/glove.dir/model.cc.s
+.PHONY : model.cc.s
+
+nn_functions.obj: nn_functions.cc.obj
+.PHONY : nn_functions.obj
+
+# target to build an object file
+nn_functions.cc.obj:
+	cd "/media/shared drive/electronics/glove/onboard code/build" && $(MAKE) $(MAKESILENT) -f glove/CMakeFiles/glove.dir/build.make glove/CMakeFiles/glove.dir/nn_functions.cc.obj
+.PHONY : nn_functions.cc.obj
+
+nn_functions.i: nn_functions.cc.i
+.PHONY : nn_functions.i
+
+# target to preprocess a source file
+nn_functions.cc.i:
+	cd "/media/shared drive/electronics/glove/onboard code/build" && $(MAKE) $(MAKESILENT) -f glove/CMakeFiles/glove.dir/build.make glove/CMakeFiles/glove.dir/nn_functions.cc.i
+.PHONY : nn_functions.cc.i
+
+nn_functions.s: nn_functions.cc.s
+.PHONY : nn_functions.s
+
+# target to generate assembly for a file
+nn_functions.cc.s:
+	cd "/media/shared drive/electronics/glove/onboard code/build" && $(MAKE) $(MAKESILENT) -f glove/CMakeFiles/glove.dir/build.make glove/CMakeFiles/glove.dir/nn_functions.cc.s
+.PHONY : nn_functions.cc.s
+
 usb_descriptors.obj: usb_descriptors.c.obj
 .PHONY : usb_descriptors.obj
 
@@ -7297,6 +7345,12 @@ help:
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i"
 	@echo "... media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s"
+	@echo "... model.obj"
+	@echo "... model.i"
+	@echo "... model.s"
+	@echo "... nn_functions.obj"
+	@echo "... nn_functions.i"
+	@echo "... nn_functions.s"
 	@echo "... usb_descriptors.obj"
 	@echo "... usb_descriptors.i"
 	@echo "... usb_descriptors.s"

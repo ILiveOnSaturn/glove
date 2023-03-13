@@ -1,7 +1,7 @@
 glove/CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/tusb_option.h \
- /media/shared\ drive/electronics/glove/onboard\ code/glove/tusb_config.h \
+ /media/shared\ drive/electronics/glove/onboard\ code/glove/./tusb_config.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/device/usbd.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_common.h \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h \

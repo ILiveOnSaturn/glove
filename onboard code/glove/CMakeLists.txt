@@ -9,7 +9,12 @@ project(glove C CXX ASM)
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(glove glove.c )
+add_executable(glove
+		${CMAKE_CURRENT_LIST_DIR}/glove.cc
+		${CMAKE_CURRENT_LIST_DIR}/imu_handler.c
+		${CMAKE_CURRENT_LIST_DIR}/nn_functions.cc
+		${CMAKE_CURRENT_LIST_DIR}/model.cc
+		)
 
 pico_set_program_name(glove "glove")
 pico_set_program_version(glove "0.1")
@@ -17,12 +22,22 @@ pico_set_program_version(glove "0.1")
 pico_enable_stdio_uart(glove 0)
 pico_enable_stdio_usb(glove 1)
 
+target_include_directories(glove
+		PUBLIC
+		${CMAKE_CURRENT_LIST_DIR}/.
+)
+
 target_sources(glove PUBLIC
-		glove.c
-		usb_descriptors.c
-		imu_handler.c
-		nn_functions.cc
-		model.cc
+		${CMAKE_CURRENT_LIST_DIR}/glove.cc
+		${CMAKE_CURRENT_LIST_DIR}/usb_descriptors.c
+		${CMAKE_CURRENT_LIST_DIR}/imu_handler.c
+		${CMAKE_CURRENT_LIST_DIR}/nn_functions.cc
+		${CMAKE_CURRENT_LIST_DIR}/model.cc
+		${CMAKE_CURRENT_LIST_DIR}/imu_handler.h
+		${CMAKE_CURRENT_LIST_DIR}/model.h
+		${CMAKE_CURRENT_LIST_DIR}/nn_functions.h
+		${CMAKE_CURRENT_LIST_DIR}/tusb_config.h
+		${CMAKE_CURRENT_LIST_DIR}/usb_descriptors.h
 		)
 
 # Add the standard library to the build
@@ -35,7 +50,7 @@ target_link_libraries(glove
 	)
 
 # Add the standard include files to the build
-target_include_directories(glove PRIVATE
+target_include_directories(glove PUBLIC
   ${CMAKE_CURRENT_LIST_DIR}
   ${CMAKE_CURRENT_LIST_DIR}/.. # for our common lwipopts or any other standard includes, if required
 )

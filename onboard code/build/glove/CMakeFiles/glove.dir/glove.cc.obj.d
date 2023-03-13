@@ -1,10 +1,15 @@
-glove/CMakeFiles/glove.dir/glove.c.obj: \
- /media/shared\ drive/electronics/glove/onboard\ code/glove/glove.c \
+glove/CMakeFiles/glove.dir/glove.cc.obj: \
+ /media/shared\ drive/electronics/glove/onboard\ code/glove/glove.cc \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_base/include/pico.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_base/include/pico/types.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_base/include/pico/assert.h \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h \
+ /usr/arm-none-eabi/include/c++/12.2.0/cassert \
+ /usr/arm-none-eabi/include/c++/12.2.0/arm-none-eabi/thumb/v6-m/nofp/bits/c++config.h \
+ /usr/arm-none-eabi/include/c++/12.2.0/arm-none-eabi/thumb/v6-m/nofp/bits/os_defines.h \
+ /usr/arm-none-eabi/include/c++/12.2.0/arm-none-eabi/thumb/v6-m/nofp/bits/cpu_defines.h \
+ /usr/arm-none-eabi/include/c++/12.2.0/pstl/pstl_config.h \
  /usr/arm-none-eabi/include/assert.h /usr/arm-none-eabi/include/_ansi.h \
  /usr/arm-none-eabi/include/newlib.h \
  /usr/arm-none-eabi/include/_newlib_version.h \
@@ -65,7 +70,7 @@ glove/CMakeFiles/glove.dir/glove.c.obj: \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdarg.h \
  /usr/arm-none-eabi/include/sys/stdio.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/tusb_option.h \
- /media/shared\ drive/electronics/glove/onboard\ code/glove/tusb_config.h \
+ /media/shared\ drive/electronics/glove/onboard\ code/glove/./tusb_config.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_compiler.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_verify.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_types.h \

@@ -1,7 +1,7 @@
 glove/CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/tusb_option.h \
- /media/shared\ drive/electronics/glove/onboard\ code/glove/tusb_config.h \
+ /media/shared\ drive/electronics/glove/onboard\ code/glove/./tusb_config.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_base/include/pico.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_base/include/pico/types.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_base/include/pico/assert.h \

@@ -1072,7 +1072,7 @@
 				{
 					"directoryIndex" : 74,
 					"id" : "ELF2UF2Build::@2febb7e0380d065be6f7",
-					"jsonFile" : "target-ELF2UF2Build-Debug-58dee5316489bdb77e22.json",
+					"jsonFile" : "target-ELF2UF2Build-Debug-2581aea7141ea5f7d32e.json",
 					"name" : "ELF2UF2Build",
 					"projectIndex" : 2
 				},
@@ -1121,7 +1121,7 @@
 				{
 					"directoryIndex" : 74,
 					"id" : "glove::@2febb7e0380d065be6f7",
-					"jsonFile" : "target-glove-Debug-a4c510143c6028a59ec1.json",
+					"jsonFile" : "target-glove-Debug-72280fa8ef7861892a82.json",
 					"name" : "glove",
 					"projectIndex" : 2
 				},

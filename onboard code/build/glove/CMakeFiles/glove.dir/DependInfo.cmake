@@ -78,6 +78,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
+  "/media/shared drive/electronics/glove/onboard code/glove/."
   "/media/shared drive/electronics/glove/onboard code/glove"
   "/media/shared drive/electronics/glove/onboard code/glove/.."
   "/media/shared drive/electronics/pico git stuff/pico-sdk/src/common/pico_stdlib/include"
@@ -195,7 +196,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/media/shared drive/electronics/glove/onboard code/src/third_party/cmsis_nn/Source/SoftmaxFunctions/arm_softmax_u8.c" "glove/CMakeFiles/glove.dir/__/src/third_party/cmsis_nn/Source/SoftmaxFunctions/arm_softmax_u8.c.obj" "gcc" "glove/CMakeFiles/glove.dir/__/src/third_party/cmsis_nn/Source/SoftmaxFunctions/arm_softmax_u8.c.obj.d"
   "/media/shared drive/electronics/glove/onboard code/src/third_party/kissfft/kiss_fft.c" "glove/CMakeFiles/glove.dir/__/src/third_party/kissfft/kiss_fft.c.obj" "gcc" "glove/CMakeFiles/glove.dir/__/src/third_party/kissfft/kiss_fft.c.obj.d"
   "/media/shared drive/electronics/glove/onboard code/src/third_party/kissfft/tools/kiss_fftr.c" "glove/CMakeFiles/glove.dir/__/src/third_party/kissfft/tools/kiss_fftr.c.obj" "gcc" "glove/CMakeFiles/glove.dir/__/src/third_party/kissfft/tools/kiss_fftr.c.obj.d"
-  "/media/shared drive/electronics/glove/onboard code/glove/glove.c" "glove/CMakeFiles/glove.dir/glove.c.obj" "gcc" "glove/CMakeFiles/glove.dir/glove.c.obj.d"
   "/media/shared drive/electronics/glove/onboard code/glove/imu_handler.c" "glove/CMakeFiles/glove.dir/imu_handler.c.obj" "gcc" "glove/CMakeFiles/glove.dir/imu_handler.c.obj.d"
   "/media/shared drive/electronics/pico git stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c" "glove/CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj" "gcc" "glove/CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj.d"
   "/media/shared drive/electronics/pico git stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c" "glove/CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj" "gcc" "glove/CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj.d"
@@ -399,7 +399,10 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/media/shared drive/electronics/glove/onboard code/src/tensorflow/lite/micro/tflite_bridge/micro_error_reporter.cc" "glove/CMakeFiles/glove.dir/__/src/tensorflow/lite/micro/tflite_bridge/micro_error_reporter.cc.obj" "gcc" "glove/CMakeFiles/glove.dir/__/src/tensorflow/lite/micro/tflite_bridge/micro_error_reporter.cc.obj.d"
   "/media/shared drive/electronics/glove/onboard code/src/tensorflow/lite/micro/tflite_bridge/op_resolver_bridge.cc" "glove/CMakeFiles/glove.dir/__/src/tensorflow/lite/micro/tflite_bridge/op_resolver_bridge.cc.obj" "gcc" "glove/CMakeFiles/glove.dir/__/src/tensorflow/lite/micro/tflite_bridge/op_resolver_bridge.cc.obj.d"
   "/media/shared drive/electronics/glove/onboard code/src/tensorflow/lite/schema/schema_utils.cc" "glove/CMakeFiles/glove.dir/__/src/tensorflow/lite/schema/schema_utils.cc.obj" "gcc" "glove/CMakeFiles/glove.dir/__/src/tensorflow/lite/schema/schema_utils.cc.obj.d"
+  "/media/shared drive/electronics/glove/onboard code/glove/glove.cc" "glove/CMakeFiles/glove.dir/glove.cc.obj" "gcc" "glove/CMakeFiles/glove.dir/glove.cc.obj.d"
   "/media/shared drive/electronics/pico git stuff/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "glove/CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" "gcc" "glove/CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d"
+  "/media/shared drive/electronics/glove/onboard code/glove/model.cc" "glove/CMakeFiles/glove.dir/model.cc.obj" "gcc" "glove/CMakeFiles/glove.dir/model.cc.obj.d"
+  "/media/shared drive/electronics/glove/onboard code/glove/nn_functions.cc" "glove/CMakeFiles/glove.dir/nn_functions.cc.obj" "gcc" "glove/CMakeFiles/glove.dir/nn_functions.cc.obj.d"
   )
 
 # Targets to which this target links.

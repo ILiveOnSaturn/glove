@@ -4,6 +4,7 @@
 #include "tensorflow/lite/micro/micro_interpreter.h"
 #include "tensorflow/lite/schema/schema_generated.h"
 #include "model.h"
+#include "nn_functions.h"
 
 #define MAX_TIMESTAMPS 11
 
@@ -29,6 +30,7 @@ void setup_nn() {
 
     static tflite::MicroMutableOpResolver<4> micro_op_resolver;
     micro_op_resolver.AddUnidirectionalSequenceLSTM();
+
     micro_op_resolver.AddStridedSlice();
     micro_op_resolver.AddFullyConnected();
     micro_op_resolver.AddSoftmax();
@@ -46,13 +48,13 @@ void setup_nn() {
     }
 }
 
-float get_output(float* imu_input) {
+float* get_nn_output(float* imu_input) {
     input->data.f = imu_input;
 
     TfLiteStatus invoke_status = interpreter->Invoke();
     if (invoke_status != kTfLiteOk) {
         printf("Invoke failed");
-        return -1.0;
+        return nullptr;
     }
-    return *interpreter->output(0)->data.f;
+    return interpreter->output(0)->data.f;
 }

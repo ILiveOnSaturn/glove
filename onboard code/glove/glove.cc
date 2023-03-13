@@ -9,9 +9,11 @@
 int main()
 {
     stdio_init_all();
+
     gpio_init(BUTTON_PIN);
     gpio_set_dir(BUTTON_PIN, GPIO_IN);
     gpio_pull_up(BUTTON_PIN);
+    sleep_ms(50); //wait for button to load
     if (!gpio_get(BUTTON_PIN)) {
         reset_usb_boot(0, 0);
     }
@@ -20,26 +22,29 @@ int main()
     tusb_init();
     setup_nn();
 
-    float buffer[11][6];
+    float buffer[11*6] = {0};
     int cnt;
-    float output;
+    float* output;
     while (true) {
         tud_task();
         if (!gpio_get(BUTTON_PIN)) {
             cnt = 0;
             while (!gpio_get(BUTTON_PIN) && cnt < 11) {
-                read_imu(buffer[cnt], buffer[cnt]+3);
+                read_imu(buffer+cnt*6, buffer+cnt*6+3);
                 ++cnt;
+                sleep_ms(100);
             }
             if (cnt == 11) {
                 continue;
             }
-            output = get_output(buffer);
-            printf("output: %f", output);
-            for (int i=0; i<11; ++i) {
-                for (int j = 0; j < 6; ++j) {
-                    buffer[i][j] = 0;
-                }
+            output = get_nn_output(buffer);
+            printf("output:\n");
+            for (int i=0; i<28; ++i) {
+                printf("%f\n", output[i]);
+            }
+            printf("size: %d\n", cnt);
+            for (int i=0; i<11*6; ++i) {
+                buffer[i] = 0;
             }
         }
     }
@@ -53,7 +58,7 @@ void tud_umount_cb(void) {//invoked when device is unmounted
 
 void tud_suspend_cb(bool remote_wakeup_en) { //invoked when usb bus is suspended. within 7ms device must draw and average current of less than 2.5mA from bus.
     (void) remote_wakeup_en; //if host allows remote wake up
-    
+
 }
 
 void tud_resume_cb(void) { //invoked when usb bus is resumed.

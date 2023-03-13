@@ -28,7 +28,7 @@ glove/CMakeFiles/glove.dir/usb_descriptors.c.obj: \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdarg.h \
  /usr/arm-none-eabi/include/sys/stdio.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/tusb_option.h \
- /media/shared\ drive/electronics/glove/onboard\ code/glove/tusb_config.h \
+ /media/shared\ drive/electronics/glove/onboard\ code/glove/./tusb_config.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_compiler.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_verify.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/common/tusb_types.h \

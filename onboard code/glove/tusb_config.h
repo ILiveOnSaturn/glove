@@ -18,6 +18,10 @@
 extern "C" { //make it in C format
 #endif
 
+#ifndef BOARD_TUD_RHPORT
+#define BOARD_TUD_RHPORT 0
+#endif
+
 #define BOARD_DEVICE_RHPORT_SPEED OPT_MODE_FULL_SPEED //the speed format of the pico. surprisingly fullspeed is slower than highspeed.
 
 #define CFG_TUSB_RHPORT0_MODE (OPT_MODE_DEVICE | BOARD_DEVICE_RHPORT_SPEED) //use rhport0 in device mode with the specified speed.
@@ -30,6 +34,8 @@ extern "C" { //make it in C format
 #ifndef CFG_TUSB_OS
 #define CFG_TUSB_OS OPT_OS_NONE //apparantly microcontrollers have os these days. thought their whole point was getting rid of it.
 #endif
+
+#define CFG_TUD_ENABLED 1
 
 #define CFG_TUD_ENDPOINT0_SIZE 64
 

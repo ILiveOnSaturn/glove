@@ -98,4 +98,6 @@ glove/CMakeFiles/glove.dir/glove.cc.obj: \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h \
  /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h \
  /media/shared\ drive/electronics/glove/onboard\ code/glove/nn_functions.h \
- /media/shared\ drive/electronics/glove/onboard\ code/glove/constants.h
+ /media/shared\ drive/electronics/glove/onboard\ code/glove/constants.h \
+ /media/shared\ drive/electronics/glove/onboard\ code/glove/tusb_config.h \
+ /media/shared\ drive/electronics/glove/onboard\ code/glove/usb_descriptors.h

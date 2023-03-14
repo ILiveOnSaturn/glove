@@ -4,8 +4,18 @@
 #include "imu_handler.h"
 #include "nn_functions.h"
 #include "constants.h"
+#include "tusb_config.h"
+#include "usb_descriptors.h"
 
 #define BUTTON_PIN 13
+#define MAX_BUFFER 10
+
+void hid_task();
+uint8_t get_keycode(int num);
+
+uint8_t char_buffer[MAX_BUFFER] = {0};
+int char_buffer_size = 0;
+bool is_key_pressed = false;
 
 int main()
 {
@@ -23,7 +33,7 @@ int main()
     tusb_init();
     setup_nn();
 
-    float buffer[max_timestamp*6] = {0};
+    float imu_buffer[max_timestamp * 6] = {0};
     int cnt;
     float* output;
     while (true) {
@@ -31,18 +41,22 @@ int main()
         if (!gpio_get(BUTTON_PIN)) {
             cnt = 0;
             while (!gpio_get(BUTTON_PIN) && cnt < max_timestamp) {
-                read_imu(buffer+cnt*6, buffer+cnt*6+3);
+                read_imu(imu_buffer + cnt * 6, imu_buffer + cnt * 6 + 3);
                 ++cnt;
-                sleep_ms(100);
+                sleep_ms(75);
             }
             if (cnt == max_timestamp) {
                 continue;
             }
             if (cnt == 1) {
-                //TODO backspace
+                if (char_buffer_size < MAX_BUFFER) {
+                    char_buffer[char_buffer_size] = get_keycode(-1);
+                    char_buffer_size++;
+                } else {
+                    printf("buffer too big\n");
+                }
             }
-            
-            output = get_nn_output(buffer, max_timestamp*6);
+            output = get_nn_output(imu_buffer, max_timestamp * 6);
             printf("output:\n");
             int max_n = 0;
             for (int i=0; i<28; ++i) {
@@ -51,14 +65,67 @@ int main()
                 }
                 printf("%f\n", output[i]);
             }
-            printf("in char: %c\n", shabtai_abc_mastertable[max_n]);
-            printf("size: %d\n", cnt);
-            for (int i=0; i<max_timestamp*6; ++i) {
-                buffer[i] = 0;
+            uint8_t keycode = get_keycode(max_n);
+            if (char_buffer_size < MAX_BUFFER) {
+                char_buffer[char_buffer_size] = keycode;
+                char_buffer_size++;
+            } else {
+                printf("buffer too big\n");
             }
         }
+        hid_task();
     }
 }
+
+uint8_t get_keycode(int num) {
+    switch (num) {
+        case 0:
+            return HID_KEY_SPACE;
+        case 28:
+            return HID_KEY_PERIOD;
+        case -1:
+            return HID_KEY_BACKSPACE;
+        default:
+            return num+3;
+    }
+}
+
+void send_hid_report(uint8_t key) {
+    if (!tud_hid_ready()) { return;}
+    uint8_t keycode[6] = {0};
+    keycode[0] = key;
+    tud_hid_keyboard_report(REPORT_ID_KEYBOARD, 0, keycode);
+    if (key == HID_KEY_NONE) {
+        is_key_pressed = false;
+    } else {
+        printf("starting loop\n");
+        for (int i=0; i<char_buffer_size; i++) {
+            if (i+1 >= MAX_BUFFER) {
+                char_buffer[i] = 0;
+            } else {
+                char_buffer[i] = char_buffer[i + 1];
+            }
+        }
+        char_buffer_size--;
+        is_key_pressed = true;
+    }
+}
+
+void hid_task() {
+    if (is_key_pressed) {
+        send_hid_report(HID_KEY_NONE);
+        return;
+    }
+    if (char_buffer_size == 0) {return;} //buffer empty
+    if (tud_suspended()) {
+        tud_remote_wakeup();
+    } else {
+        printf("size: %d, first element: %d\n", char_buffer_size, char_buffer[0]);
+        send_hid_report(char_buffer[char_buffer_size-1]);
+    }
+
+}
+
 
 void tud_mount_cb(void) {//invoked when device is mounted
 }

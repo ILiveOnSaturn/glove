@@ -62,7 +62,7 @@ enum {
 
 #define CONFIG_TOTAL_LEN (TUD_CONFIG_DESC_LEN + TUD_HID_DESC_LEN + TUD_CDC_DESC_LEN) //config len plus hid len for total len.
 
-#define EPNUM_HID 0x81 //this is the epin for the hid, but i don't know why this is 0x81
+#define EPNUM_HID 0x84 //this is the epin for the hid, but i don't know why this is 0x81
 
 uint8_t const desc_configuration[] = {
     TUD_CONFIG_DESCRIPTOR(1, ITF_NUM_TOTAL, 0, CONFIG_TOTAL_LEN, TUSB_DESC_CONFIG_ATT_REMOTE_WAKEUP, 100),

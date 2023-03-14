@@ -32392,7 +32392,9 @@ glove/CMakeFiles/glove.dir/glove.cc.obj: /media/shared\ drive/electronics/glove/
   /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h \
   /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h \
   /media/shared\ drive/electronics/glove/onboard\ code/glove/nn_functions.h \
-  /media/shared\ drive/electronics/glove/onboard\ code/glove/constants.h
+  /media/shared\ drive/electronics/glove/onboard\ code/glove/constants.h \
+  /media/shared\ drive/electronics/glove/onboard\ code/glove/tusb_config.h \
+  /media/shared\ drive/electronics/glove/onboard\ code/glove/usb_descriptors.h
 
 glove/CMakeFiles/glove.dir/imu_handler.c.obj: /media/shared\ drive/electronics/glove/onboard\ code/glove/imu_handler.c \
   /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h \
@@ -35121,8 +35123,6 @@ glove/CMakeFiles/glove.dir/usb_descriptors.c.obj: /media/shared\ drive/electroni
   /media/shared\ drive/electronics/glove/onboard\ code/glove/usb_descriptors.h
 
 
-/media/shared\ drive/electronics/glove/onboard\ code/glove/usb_descriptors.h:
-
 /media/shared\ drive/electronics/glove/onboard\ code/glove/usb_descriptors.c:
 
 /media/shared\ drive/electronics/glove/onboard\ code/glove/nn_functions.cc:
@@ -35230,6 +35230,8 @@ glove/CMakeFiles/glove.dir/usb_descriptors.c.obj: /media/shared\ drive/electroni
 /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c:
 
 /media/shared\ drive/electronics/glove/onboard\ code/glove/imu_handler.c:
+
+/media/shared\ drive/electronics/glove/onboard\ code/glove/usb_descriptors.h:
 
 /media/shared\ drive/electronics/glove/onboard\ code/glove/nn_functions.h:
 

@@ -43,7 +43,7 @@ int main()
             while (!gpio_get(BUTTON_PIN) && cnt < max_timestamp) {
                 read_imu(imu_buffer + cnt * 6, imu_buffer + cnt * 6 + 3);
                 ++cnt;
-                sleep_ms(75);
+                sleep_ms(50);
             }
             if (cnt == max_timestamp) {
                 continue;
@@ -65,7 +65,9 @@ int main()
                 }
                 printf("%f\n", output[i]);
             }
+            printf("buffer size: %d\n", cnt);
             uint8_t keycode = get_keycode(max_n);
+            printf("keycode: %d\n", keycode);
             if (char_buffer_size < MAX_BUFFER) {
                 char_buffer[char_buffer_size] = keycode;
                 char_buffer_size++;
@@ -98,7 +100,6 @@ void send_hid_report(uint8_t key) {
     if (key == HID_KEY_NONE) {
         is_key_pressed = false;
     } else {
-        printf("starting loop\n");
         for (int i=0; i<char_buffer_size; i++) {
             if (i+1 >= MAX_BUFFER) {
                 char_buffer[i] = 0;
@@ -120,7 +121,7 @@ void hid_task() {
     if (tud_suspended()) {
         tud_remote_wakeup();
     } else {
-        printf("size: %d, first element: %d\n", char_buffer_size, char_buffer[0]);
+        //printf("size: %d, first element: %d\n", char_buffer_size, char_buffer[0]);
         send_hid_report(char_buffer[char_buffer_size-1]);
     }
 

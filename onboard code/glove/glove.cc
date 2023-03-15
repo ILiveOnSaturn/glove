@@ -55,6 +55,7 @@ int main()
                 } else {
                     printf("buffer too big\n");
                 }
+                continue;
             }
             output = get_nn_output(imu_buffer, max_timestamp * 6);
             printf("output:\n");
@@ -74,21 +75,25 @@ int main()
             } else {
                 printf("buffer too big\n");
             }
+            for (int i=0; i<6*max_timestamp; i++) {
+                imu_buffer[i] = 0;
+            }
         }
         hid_task();
     }
 }
 
 uint8_t get_keycode(int num) {
-    switch (num) {
-        case 0:
-            return HID_KEY_SPACE;
-        case 28:
-            return HID_KEY_PERIOD;
-        case -1:
-            return HID_KEY_BACKSPACE;
-        default:
-            return num+3;
+    if (num == 0) {
+        return HID_KEY_SPACE;
+    }
+    else if (num == 27) {
+        return HID_KEY_PERIOD;
+    }
+    else if (num == -1) {
+        return HID_KEY_BACKSPACE;
+    } else {
+        return num+3;
     }
 }
 

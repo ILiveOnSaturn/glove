@@ -67,6 +67,13 @@ the model is really big (88776b) and im not even talking about the model file wh
 ###08.03.2023###
 i am trying really hard to make the cmake file of the pico-tflmicro into what i need, but it seems that because this is a newer version, that stuff dont match up. but from what i can tell, it just includes everything in the src dir so i should try it because what do i have to lose?
 
-###15.03.2023###
+###14.03.2023###
 the glove is finally working.
 what can i do now? well first off i need to fine tune it so itll be a lot better and secondly i need to implement the backspace which isnt working right now. but, this stuff is for tomorrow.
+
+###15.03.2023###
+i am a fucking god.
+this is working 99%.
+im done with the keyboard.
+im done with the school project code.
+i am a literal god.

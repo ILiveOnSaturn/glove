@@ -24,8 +24,8 @@ int main()
     gpio_init(BUTTON_PIN);
     gpio_set_dir(BUTTON_PIN, GPIO_IN);
     gpio_pull_up(BUTTON_PIN);
-    sleep_ms(50); //wait for button to load
-    if (!gpio_get(BUTTON_PIN)) {
+    sleep_ms(50); //wait for the button to load
+    if (!gpio_get(BUTTON_PIN)) { //go into the bootsel if needed.
         reset_usb_boot(0, 0);
     }
 
@@ -75,7 +75,7 @@ int main()
             } else {
                 printf("buffer too big\n");
             }
-            for (int i=0; i<6*max_timestamp; i++) {
+            for (int i=0; i<6*max_timestamp; i++) { //clear buffer
                 imu_buffer[i] = 0;
             }
         }
@@ -118,15 +118,15 @@ void send_hid_report(uint8_t key) {
 }
 
 void hid_task() {
-    if (is_key_pressed) {
+    if (is_key_pressed) { //clear key
         send_hid_report(HID_KEY_NONE);
         return;
     }
     if (char_buffer_size == 0) {return;} //buffer empty
     if (tud_suspended()) {
+        //wake up device if host has remote wakeup enabled.
         tud_remote_wakeup();
     } else {
-        //printf("size: %d, first element: %d\n", char_buffer_size, char_buffer[0]);
         send_hid_report(char_buffer[char_buffer_size-1]);
     }
 

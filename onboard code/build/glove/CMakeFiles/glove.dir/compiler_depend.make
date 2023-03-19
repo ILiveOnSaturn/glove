@@ -34764,8 +34764,7 @@ glove/CMakeFiles/glove.dir/media/shared_drive/electronics/pico_git_stuff/pico-sd
   /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/common/pico_base/include/pico/error.h \
   /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/pico_unique_id/include/pico/unique_id.h
 
-glove/CMakeFiles/glove.dir/model.cc.obj: /media/shared\ drive/electronics/glove/onboard\ code/glove/model.cc \
-  /media/shared\ drive/electronics/glove/onboard\ code/glove/model.h
+glove/CMakeFiles/glove.dir/model.cc.obj: /media/shared\ drive/electronics/glove/onboard\ code/glove/model.cc
 
 glove/CMakeFiles/glove.dir/nn_functions.cc.obj: /media/shared\ drive/electronics/glove/onboard\ code/glove/nn_functions.cc \
   /media/shared\ drive/electronics/pico\ git\ stuff/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \

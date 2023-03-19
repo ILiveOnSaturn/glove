@@ -1,4 +1,0 @@
-Cannot generate into /home/iliveonsaturn/Code/project/training program/onboard
-It is already used for project /media/shared drive/electronics/test/ProjectName
-
-Please either delete it manually or select another generation directory

@@ -3,11 +3,10 @@
 #include "imu_handler.h"
 
 void imu_init() {
-    //stdio_init_all();
+    //initialize the imu and call the reset function
     i2c_init(I2C_PIN, 100);
     gpio_set_function(SDA_PIN, GPIO_FUNC_I2C);
     gpio_set_function(SCL_PIN, GPIO_FUNC_I2C);
-    //bi_decl(bi_2pins_with_func(SDA_PIN, SCL_PIN, GPIO_FUNC_I2C));
     reset_imu();
 
 }
@@ -19,15 +18,14 @@ void reset_imu() {
     uint8_t ctrl_reg4_g[] = {0x23, 0x00};
     uint8_t ctrl_reg1_a[] = {0x20, 0x57};
     uint8_t ctrl_reg4_a[] = {0x23, 0x18};
-    //uint8_t ctrl_reg5_a[] = {0x24, 0x0A};
     i2c_write_blocking(I2C_PIN, L3GD20_ADDRESS, ctrl_reg1_g, 2, false);
     i2c_write_blocking(I2C_PIN, L3GD20_ADDRESS, ctrl_reg4_g, 2, false);
     i2c_write_blocking(I2C_PIN, LSM303D_ADDRESS, ctrl_reg1_a, 2, false);
     i2c_write_blocking(I2C_PIN, LSM303D_ADDRESS, ctrl_reg4_a, 2, false);
-    //i2c_write_blocking(I2C_PIN, LSM303D_ADDRESS, ctrl_reg5_a, 2, false);
 }
 
 void read_imu_raw(int16_t accel[3], int16_t gyro[3]){
+    //read the raw imu output
     uint8_t buffer[6];
 
     uint8_t out_addr = 0xA8;
@@ -48,6 +46,7 @@ void read_imu_raw(int16_t accel[3], int16_t gyro[3]){
 }
 
 void read_imu(float gyro[3], float accel[3]) {
+    //read raw and turn raw into useful data
     int16_t accel_raw[3];
     int16_t gyro_raw[3];
     read_imu_raw(accel_raw, gyro_raw);

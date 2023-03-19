@@ -41,6 +41,7 @@ int main()
         if (!gpio_get(BUTTON_PIN)) {
             cnt = 0;
             while (!gpio_get(BUTTON_PIN) && cnt < max_timestamp) {
+                //read imu input adn put it in buffer in the corresponding place.
                 read_imu(imu_buffer + cnt * 6, imu_buffer + cnt * 6 + 3);
                 ++cnt;
                 sleep_ms(50);
@@ -48,7 +49,7 @@ int main()
             if (cnt == max_timestamp) {
                 continue;
             }
-            if (cnt == 1) {
+            if (cnt == 1) { //if the click is short then add the backspace button to the buffer.
                 if (char_buffer_size < MAX_BUFFER) {
                     char_buffer[char_buffer_size] = get_keycode(-1);
                     char_buffer_size++;
@@ -60,7 +61,7 @@ int main()
             output = get_nn_output(imu_buffer, max_timestamp * 6);
             printf("output:\n");
             int max_n = 0;
-            for (int i=0; i<28; ++i) {
+            for (int i=0; i<28; ++i) { //softmax output, get the corresponding output.
                 if (output[max_n] < output[i]) {
                     max_n = i;
                 }
@@ -70,6 +71,7 @@ int main()
             uint8_t keycode = get_keycode(max_n);
             printf("keycode: %d\n", keycode);
             if (char_buffer_size < MAX_BUFFER) {
+                //add keycode to char buffer.
                 char_buffer[char_buffer_size] = keycode;
                 char_buffer_size++;
             } else {
@@ -83,7 +85,7 @@ int main()
     }
 }
 
-uint8_t get_keycode(int num) {
+uint8_t get_keycode(int num) { //turn special keys into their keycodes.
     if (num == 0) {
         return HID_KEY_SPACE;
     }
@@ -98,13 +100,14 @@ uint8_t get_keycode(int num) {
 }
 
 void send_hid_report(uint8_t key) {
-    if (!tud_hid_ready()) { return;}
+    if (!tud_hid_ready()) { return;} //check if hid is ready
     uint8_t keycode[6] = {0};
     keycode[0] = key;
-    tud_hid_keyboard_report(REPORT_ID_KEYBOARD, 0, keycode);
+    tud_hid_keyboard_report(REPORT_ID_KEYBOARD, 0, keycode); //click key
     if (key == HID_KEY_NONE) {
         is_key_pressed = false;
     } else {
+        //clear pressed key from buffer and move elements down one.
         for (int i=0; i<char_buffer_size; i++) {
             if (i+1 >= MAX_BUFFER) {
                 char_buffer[i] = 0;

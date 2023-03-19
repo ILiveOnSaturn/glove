@@ -1,3 +1,0 @@
-/media/shared drive/electronics/test/ProjectName/pioasm/CMakeFiles/pioasm.dir
-/media/shared drive/electronics/test/ProjectName/pioasm/CMakeFiles/edit_cache.dir
-/media/shared drive/electronics/test/ProjectName/pioasm/CMakeFiles/rebuild_cache.dir

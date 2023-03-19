@@ -1,1 +1,0 @@
-cmd='/media/linux programs/apps/CLion/ch-0/223.8836.42/bin/cmake/linux/x64/bin/cmake;-GNinja;-C<TMP_DIR>/PioasmBuild-cache-$<CONFIG>.cmake;<SOURCE_DIR><SOURCE_SUBDIR>'

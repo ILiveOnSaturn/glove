@@ -77,3 +77,6 @@ this is working 99%.
 im done with the keyboard.
 im done with the school project code.
 i am a literal god.
+
+###19.03.2023###
+the project is fully documented and organized. it is ready to be uploaded to github.

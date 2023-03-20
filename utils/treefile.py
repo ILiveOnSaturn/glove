@@ -1,3 +1,5 @@
+#this was made for me to have an easier time with the cmake of the tflmicro lib.
+
 import os
 
 def list_files(startpath):

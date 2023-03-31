@@ -45,7 +45,6 @@ target_include_directories(ProjectName PRIVATE
 
 # Add any user requested libraries
 target_link_libraries(ProjectName
-        hardware_adc
         hardware_i2c
         pico_bootsel_via_double_reset
         pico_bootrom)

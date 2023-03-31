@@ -8,17 +8,18 @@ To run the project on your own rp2040, you will need to do the following:
 3. add the model to the onboard code and compile.
 
 After doing the following, you will be able to use the model as your own.
+A short video demonstrating how to use the glove after it is compiled can be found [here](https://drive.google.com/file/d/10Mz-SdTQMQQ7HqvoYr6-DdOncQcQBNrY/view?usp=share_link).
 
-**Note:** You will need to download the raspberry pi pico sdk and add it into the CMakeLists.txt when compiling. you can download the pico sdk [here](https://github.com/raspberrypi/pico-sdk).
+**Note:** You will need to download the raspberry pi pico SDK and add it into the CMakeLists.txt when compiling. you can download the pico SDK [here](https://github.com/raspberrypi/pico-sdk).
 
 ## Gathering Data:
 To start gathering data, you will first need to load the training binary into the rp2040. to do that, you will need to add ProjectName.uf2 into the bootsel.
 
-Connect the rp2040 into the computer and run the training program. Select the lower letters (the project currently doesn't support special characters and upper characters) and start writing. **Make sure the data and count files are deleted so you will have a fresh data file.**
+After loading the binary onto the microcontroller, connect the rp2040 into the computer and run the training program. Select the lower letters (the project currently doesn't support special characters and upper characters) and start writing. **Make sure the data and count files are deleted so you will have a fresh data file.**
 
 **Disclamer!!: if you have a different imu than the L3GD20 LSM303D then you will need to change the code to match your own imu.**
 
-(Note: if at any point you want to make changes to the training binary you can use cmake to build it. if you want to get back into the rp2040 bootsel, press and hold the button and insert the usb into your computer).
+(Note: if at any point you want to make changes to the training binary you can use cmake to build it. if you want to get back into the rp2040 bootsel, press and hold the external button and insert the usb into your computer.)
 
 ## Training the Model:
 To train the model, run the ipynb notebook in the folder `glove/training program/` so it'll have access to your data.
